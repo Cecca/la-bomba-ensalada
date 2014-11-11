@@ -7,6 +7,8 @@
 
 I = {
   
+  \time 4/4
+  
   s1*31
 
 }
@@ -24,160 +26,242 @@ III = {
   
   s4
   
+  \time 3/4
+  
   \barNumberCheck #44
   
-  s4*14
+  s2.*9
+  
+  \time 4/4
+  
+  s1*5
+  
+  \time 2/4
+  
+  s2*1
 
 }
 
 IV = {
   
+  \time 3/4
+  
   \barNumberCheck #59
   
-  s4*16
+  s2.*14
+  
+  \time 4/4
+  
+  s1*2
   
 }
 
 V = {
   
+  \time 4/4
+  
   \barNumberCheck #76
   
-  s4*17
+  s1*17
   
 }
 
 VI = {
   
-  \barNumberCheck #94
+  \time 4/4
   
-  s4*13
-  
-}
-
-VII = {
-  
-  \barNumberCheck #108
+  \barNumberCheck #95
   
   s4*12
   
 }
 
+VII = {
+  
+  \time 4/4
+  
+  s4 |
+  
+  \barNumberCheck #108
+  
+  s1*9
+  
+  \time 2/4
+  
+  s2*1
+  
+  \time 3/4
+  
+  s2.*2
+  
+}
+
 VIII = {
+  
+  \time 3/4
+  
+  s4 |
   
   \barNumberCheck #121
   
-  s4*19
+  s2.*19
   
 }
 
 IX = {
   
+  \time 4/4
+  
   \barNumberCheck #141
   
-  s4*9
+  s1*9
   
 }
 
 X = {
   
+  \time 4/4
+  
   \barNumberCheck #151
   
-  s4*16
+  s1*16
   
 }
 
 XI = {
   
+  \time 4/4
+  
+  s4 s4 |
+  
   \barNumberCheck #168
   
-  s4*9
+  s1*9
   
 }
 
 XII = {
   
+  \time 4/4
+  
   \barNumberCheck #178
   
-  s4*14
+  s1*10
+  
+  \time 2/4
+  
+  s2*1
+  
+  \time 3/4
+  
+  s2.*3
   
 }
 
 XIII = {
   
+  \time 3/4
+  
   \barNumberCheck #193
   
-  s4*24
+  s2.*23
+  
+  \time 4/4
+  
+  s1*1
   
 }
 
 XIV = {
   
+  \time 4/4
+  
   \barNumberCheck #218
   
-  s4*13
+  s1*13
   
 }
 
 XV = {
   
-  \barNumberCheck #232
+  s4 s4 s4 |
   
-  s4*8
+  \barNumberCheck #233
+  
+  s1*7
   
 }
 
 XVI = {
   
-  \barNumberCheck #241
+  \time 4/4
   
-  s4*9
+  s4 s4 s4 |
+  
+  \barNumberCheck #242
+  
+  s1*8
   
 }
 
 XVII = {
   
+  \time 4/4
+  
+  s4 s4 |
+  
   \barNumberCheck #251
   
-  s4*3
+  s1*3
   
 }
 
 XVIII = {
   
+  \time 3/4
+  
   \barNumberCheck #255
   
-  s4*32
+  s2.*32
   
 }
 
 XIX = {
   
+  \time 4/4
+  
   \barNumberCheck #288
   
-  s4*18
+  s1*18
   
 }
 
 XX = {
   
+  \time 6/8
+  
   \barNumberCheck #307
   
-  s4*3
+  s2.*3
   
 }
 
 XXI = {
   
+  \time 4/4
+  
   \barNumberCheck #311
   
-  s4*10
+  s1*10
   
 }
 
 XXII = {
   
+  \time 4/4
+  
   \barNumberCheck #322
   
-  s4*14
+  s1*14
   
 }

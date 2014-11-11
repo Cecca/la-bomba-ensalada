@@ -6,8 +6,8 @@
   | II      |    32 |  43 |     11 | leaves a quarter for the upbeat           |
   | III     |    44 |  58 |     14 | starts on the upbeat                      |
   | IV      |    59 |  75 |     16 | -                                         |
-  | V       |    76 |  93 |     17 | takes only the first quarter of 93        |
-  | VI      |    94 | 107 |     13 | starts on the second quarter of 93        |
+  | V       |    76 |  94 |     17 | takes only the first quarter of 94        |
+  | VI      |    95 | 107 |     13 | starts on the second quarter of 94        |
   | VII     |   108 | 120 |     12 | starts on the upbeat (only an eighth)     |
   | VIII    |   121 | 140 |     19 | starts on the upbeat                      |
   | IX      |   141 | 150 |      9 | -                                         |
