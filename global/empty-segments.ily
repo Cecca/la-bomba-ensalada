@@ -5,6 +5,8 @@
   segments, filled with spacer rests.
 %}
 
+\include "../makescore/compile-segment.ily"
+
 I = {
   
   \time 4/4
@@ -48,7 +50,7 @@ IV = {
   
   \barNumberCheck #59
   
-  s2.*14
+  s2.*15
   
   \time 4/4
   
@@ -64,15 +66,21 @@ V = {
   
   s1*17
   
+  s4
+  
 }
 
 VI = {
   
   \time 4/4
   
-  \barNumberCheck #95
+  s4 s4 s4 |
   
-  s4*12
+  \barNumberCheck #94
+  
+  s1*13
+  
+  s4 s4 s4
   
 }
 
@@ -94,6 +102,8 @@ VII = {
   
   s2.*2
   
+  s4 s4
+  
 }
 
 VIII = {
@@ -104,7 +114,11 @@ VIII = {
   
   \barNumberCheck #121
   
-  s2.*19
+  s2.*16
+  
+  \repeat volta 2 {
+    s2.*4
+  }
   
 }
 
@@ -114,7 +128,7 @@ IX = {
   
   \barNumberCheck #141
   
-  s1*9
+  s1*10
   
 }
 
@@ -126,6 +140,8 @@ X = {
   
   s1*16
   
+  s4 s4
+  
 }
 
 XI = {
@@ -136,7 +152,7 @@ XI = {
   
   \barNumberCheck #168
   
-  s1*9
+  s1*10
   
 }
 
@@ -146,7 +162,7 @@ XII = {
   
   \barNumberCheck #178
   
-  s1*10
+  s1*11
   
   \time 2/4
   
@@ -164,7 +180,7 @@ XIII = {
   
   \barNumberCheck #193
   
-  s2.*23
+  s2.*24
   
   \time 4/4
   
@@ -178,17 +194,23 @@ XIV = {
   
   \barNumberCheck #218
   
-  s1*13
+  s1*14
+  
+  s4
   
 }
 
 XV = {
   
+  \time 4/4
+  
   s4 s4 s4 |
   
   \barNumberCheck #233
   
-  s1*7
+  s1*8
+  
+  s4
   
 }
 
@@ -202,6 +224,8 @@ XVI = {
   
   s1*8
   
+  s4 s4
+  
 }
 
 XVII = {
@@ -212,7 +236,7 @@ XVII = {
   
   \barNumberCheck #251
   
-  s1*3
+  s1*4
   
 }
 
@@ -222,7 +246,7 @@ XVIII = {
   
   \barNumberCheck #255
   
-  s2.*32
+  s2.*33
   
 }
 
@@ -232,7 +256,7 @@ XIX = {
   
   \barNumberCheck #288
   
-  s1*18
+  s1*19
   
 }
 
@@ -242,7 +266,7 @@ XX = {
   
   \barNumberCheck #307
   
-  s2.*3
+  s2.*4
   
 }
 
@@ -252,7 +276,7 @@ XXI = {
   
   \barNumberCheck #311
   
-  s1*10
+  s1*11
   
 }
 
@@ -264,4 +288,53 @@ XXII = {
   
   s1*14
   
+  \barNumberCheck #336
+  
+}
+
+\compileSegment {
+  \I
+  \mark \default
+  \II
+  \mark \default
+  \III
+  \mark \default
+  \IV
+  \mark \default
+  \V
+  \mark \default
+  \VI
+  \mark \default
+  \VII
+  \mark \default
+  \VIII
+  \mark \default
+  \IX
+  \mark \default
+  \X
+  \mark \default
+  \XI
+  \mark \default
+  \XII
+  \mark \default
+  \XIII
+  \mark \default
+  \XIV
+  \mark \default
+  \XV
+  \mark \default
+  \XVI
+  \mark \default
+  \XVII
+  \mark \default
+  \XVIII
+  \mark \default
+  \XIX
+  \mark \default
+  \XX
+  \mark \default
+  \XXI
+  \mark \default
+  \XXII
+  \bar "|."
 }
