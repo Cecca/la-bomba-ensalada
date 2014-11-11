@@ -1,26 +1,27 @@
 * Segments
-  |---------+-------+-----+---+-------------------------------------------------|
-  | segment | start | end |   | notes                                           |
-  |---------+-------+-----+---+-------------------------------------------------|
-  | I       |     0 |  31 |   | bass and tenor finish in the subsequent segment |
-  | II      |    32 |  43 |   | leaves a quarter for the upbeat                 |
-  | III     |    44 |  58 |   | starts on the upbeat                            |
-  | IV      |    59 |  75 |   | -                                               |
-  | V       |    76 |  93 |   | takes only the first quarter of 93              |
-  | VI      |    94 | 107 |   | starts on the second quarter of 93              |
-  | VII     |   108 | 120 |   | starts on the upbeat (only an eighth)           |
-  | VIII    |   121 | 140 |   | starts on the upbeat                            |
-  | IX      |   141 | 150 |   | -                                               |
-  | X       |   151 | 167 |   | -                                               |
-  | XI      |   168 | 177 |   | starts on the upbeat                            |
-  | XII     |   178 | 192 |   | -                                               |
-  | XIII    |   193 | 217 |   | -                                               |
-  | XIV     |   218 | 231 |   | ends with a quarter in measure 232              |
-  | XV      |   232 | 240 |   | starts on the second beat                       |
-  | XVI     |   241 | 250 |   | starts on the second beat                       |
-  | XVII    |   251 | 254 |   | starts on the third beat of 250                 |
-  | XVIII   |   255 | 287 |   | -                                               |
-  | XIX     |   288 | 306 |   | -                                               |
-  | XX      |   307 | 310 |   | -                                               |
-  | XXI     |   311 | 321 |   | -                                               |
-  | XXII    |   322 | 336 |   | shift of 2 quarters w.r.t. the 'original'       |
+  |---------+-------+-----+--------+-------------------------------------------|
+  | segment | start | end | length | notes                                     |
+  |---------+-------+-----+--------+-------------------------------------------|
+  | I       |     0 |  31 |     31 | bass and tenor finish at 32               |
+  | II      |    32 |  43 |     11 | leaves a quarter for the upbeat           |
+  | III     |    44 |  58 |     14 | starts on the upbeat                      |
+  | IV      |    59 |  75 |     16 | -                                         |
+  | V       |    76 |  93 |     17 | takes only the first quarter of 93        |
+  | VI      |    94 | 107 |     13 | starts on the second quarter of 93        |
+  | VII     |   108 | 120 |     12 | starts on the upbeat (only an eighth)     |
+  | VIII    |   121 | 140 |     19 | starts on the upbeat                      |
+  | IX      |   141 | 150 |      9 | -                                         |
+  | X       |   151 | 167 |     16 | -                                         |
+  | XI      |   168 | 177 |      9 | starts on the upbeat                      |
+  | XII     |   178 | 192 |     14 | -                                         |
+  | XIII    |   193 | 217 |     24 | -                                         |
+  | XIV     |   218 | 231 |     13 | ends with a quarter in measure 232        |
+  | XV      |   232 | 240 |      8 | starts on the second beat                 |
+  | XVI     |   241 | 250 |      9 | starts on the second beat                 |
+  | XVII    |   251 | 254 |      3 | starts on the third beat of 250           |
+  | XVIII   |   255 | 287 |     32 | -                                         |
+  | XIX     |   288 | 306 |     18 | -                                         |
+  | XX      |   307 | 310 |      3 | -                                         |
+  | XXI     |   311 | 321 |     10 | -                                         |
+  | XXII    |   322 | 336 |     14 | shift of 2 quarters w.r.t. the 'original' |
+  #+TBLFM: $4=$3-$2
