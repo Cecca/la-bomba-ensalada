@@ -6,14 +6,25 @@
 %}
 
 I = {
+  
+  s1*31
 
 }
 
 II = {
 
+  \barNumberCheck #32
+  
+  s1*11
+  s4*3
+
 }
 
 III = {
+  
+  s4
+  
+  \barNumberCheck #44
 
 }
 
