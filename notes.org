@@ -1,26 +1,26 @@
 * Segments
-  |---------+-------+-----+-------------------------------------------------|
-  | segment | start | end | notes                                           |
-  |---------+-------+-----+-------------------------------------------------|
-  | I       |     0 |  31 | bass and tenor finish in the subsequent segment |
-  | II      |    32 |  43 | leaves a quarter for the upbeat                 |
-  | III     |    44 |  58 | starts on the upbeat                            |
-  | IV      |    59 |  75 | -                                               |
-  | V       |    76 |  93 | takes only the first quarter of 93              |
-  | VI      |    94 | 107 | starts on the second quarter of 93              |
-  | VII     |   108 | 120 | starts on the upbeat (only an eighth)           |
-  | VIII    |   121 | 140 | starts on the upbeat                            |
-  | IX      |   141 | 150 | -                                               |
-  | X       |   151 | 167 | -                                               |
-  | XI      |   168 | 177 | starts on the upbeat                            |
-  | XII     |   178 | 192 | -                                               |
-  | XIII    |   193 | 217 | -                                               |
-  | XIV     |   218 | 231 | ends with a quarter in measure 232              |
-  | XV      |   232 | 240 | starts on the second beat                       |
-  | XVI     |   241 | 250 | starts on the second beat                       |
-  | XVII    |   251 | 254 | starts on the third beat of 250                 |
-  | XVIII   |   255 | 287 | -                                               |
-  | XIX     |   288 | 306 | -                                               |
-  | XX      |   307 | 310 | -                                               |
-  | XXI     |   311 | 321 | -                                               |
-  | XXII    |   322 | 336 | shift of 2 quarters w.r.t. the 'original'       |
+  |---------+-------+-----+---+-------------------------------------------------|
+  | segment | start | end |   | notes                                           |
+  |---------+-------+-----+---+-------------------------------------------------|
+  | I       |     0 |  31 |   | bass and tenor finish in the subsequent segment |
+  | II      |    32 |  43 |   | leaves a quarter for the upbeat                 |
+  | III     |    44 |  58 |   | starts on the upbeat                            |
+  | IV      |    59 |  75 |   | -                                               |
+  | V       |    76 |  93 |   | takes only the first quarter of 93              |
+  | VI      |    94 | 107 |   | starts on the second quarter of 93              |
+  | VII     |   108 | 120 |   | starts on the upbeat (only an eighth)           |
+  | VIII    |   121 | 140 |   | starts on the upbeat                            |
+  | IX      |   141 | 150 |   | -                                               |
+  | X       |   151 | 167 |   | -                                               |
+  | XI      |   168 | 177 |   | starts on the upbeat                            |
+  | XII     |   178 | 192 |   | -                                               |
+  | XIII    |   193 | 217 |   | -                                               |
+  | XIV     |   218 | 231 |   | ends with a quarter in measure 232              |
+  | XV      |   232 | 240 |   | starts on the second beat                       |
+  | XVI     |   241 | 250 |   | starts on the second beat                       |
+  | XVII    |   251 | 254 |   | starts on the third beat of 250                 |
+  | XVIII   |   255 | 287 |   | -                                               |
+  | XIX     |   288 | 306 |   | -                                               |
+  | XX      |   307 | 310 |   | -                                               |
+  | XXI     |   311 | 321 |   | -                                               |
+  | XXII    |   322 | 336 |   | shift of 2 quarters w.r.t. the 'original'       |
