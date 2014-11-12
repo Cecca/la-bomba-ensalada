@@ -71,10 +71,10 @@ V = {
 }
 
 VI = {
+
+  s4 s4 s4 |
   
   \time 4/4
-  
-  s4 s4 s4 |
   
   \barNumberCheck #94
   
@@ -85,10 +85,10 @@ VI = {
 }
 
 VII = {
+
+  s4 |
   
   \time 4/4
-  
-  s4 |
   
   \barNumberCheck #108
   
@@ -107,10 +107,10 @@ VII = {
 }
 
 VIII = {
-  
-  \time 3/4
-  
+ 
   s4 |
+ 
+  \time 3/4
   
   \barNumberCheck #121
   
@@ -145,10 +145,10 @@ X = {
 }
 
 XI = {
+
+  s4 s4 |
   
   \time 4/4
-  
-  s4 s4 |
   
   \barNumberCheck #168
   
@@ -201,10 +201,10 @@ XIV = {
 }
 
 XV = {
+
+  s4 s4 s4 |
   
   \time 4/4
-  
-  s4 s4 s4 |
   
   \barNumberCheck #233
   
@@ -215,10 +215,10 @@ XV = {
 }
 
 XVI = {
+
+  s4 s4 s4 |
   
   \time 4/4
-  
-  s4 s4 s4 |
   
   \barNumberCheck #242
   
@@ -229,10 +229,10 @@ XVI = {
 }
 
 XVII = {
+
+  s4 s4 |
   
   \time 4/4
-  
-  s4 s4 |
   
   \barNumberCheck #251
   
