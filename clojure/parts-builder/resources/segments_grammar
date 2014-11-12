@@ -14,17 +14,17 @@ segment_body := ( time_sig | redundant_time_sig ) <ws> ( upbeat_spacers <ws> )? 
 
 repeat := '\\repeat' <ws> 'volta' <ws> #'\d+' <ws> '{' <ws> spacers <ws> '}'
 
-upbeat_spacers := spacers <ws> '|'
+upbeat_spacers := spacers <ws> <'|'>
 
-redundant_time_sig := '% redundant' <ws> time_sig
+redundant_time_sig := <'% redundant'> <ws> time_sig
 
-time_sig := '\\time ' #'\d/\d'
+time_sig := <'\\time '> #'\d/\d'
 
 <spacers> := spacer <ws> spacers*
 
 spacer := #'s\d\.?(\*\d+)?'
 
-bar_check := #'\\barNumberCheck\s+#\d+'
+bar_check := <'\\barNumberCheck'> <ws> #'#\d+'
 
 music_function := '\\' #'[a-zA-Z]+' <ws> music_function_args
 
