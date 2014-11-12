@@ -8,9 +8,9 @@ segment := segment_id <ws> <'='> <ws> <'{'> <ws> segment_body <'}'>
 
 segment_id := #'[IVX]+'
 
-segment_body := upbeat_spacers? <ws> ( body_element <ws> )*
+segment_body := ( time_sig | redundant_time_sig ) <ws> ( upbeat_spacers <ws> )? ( body_element <ws> )*
 
-<body_element> := redundant_time_sig | time_sig | spacers | bar_check | repeat
+<body_element> := time_sig | spacers | bar_check | repeat
 
 repeat := '\\repeat' <ws> 'volta' <ws> #'\d+' <ws> '{' <ws> spacers <ws> '}'
 

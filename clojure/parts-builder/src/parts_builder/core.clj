@@ -6,7 +6,7 @@
 (def segment-parser
   (insta/parser (clojure.java.io/resource "segments_grammar")))
 
-(def parse-segment-file
+(defn parse-segment-file
   [file-name]
   (let [ptree (segment-parser (slurp file-name))]
     (if (insta/failure? ptree)
