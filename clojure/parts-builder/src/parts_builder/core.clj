@@ -14,8 +14,24 @@
           (System/exit 1))
       ptree)))
 
+(defn segment-tree->map
+  [segment-tree]
+  (when (= :segment (first segment-tree))
+    (into {}
+          (for [e (rest segment-tree)]
+            (let [k (first e)
+                  v (rest e)]
+              (if (= 1 (count v))
+                [k (first v)]
+                [k v]))))))
+
+(defn segment-tree->template-vars
+  [segment-tree]
+  (let [[[_ id] [_ & body]] (rest segment-tree)]
+    {:segment_id id
+     :body body}))
+
 (defn -main
-  "I don't do a whole lot ... yet."
   [& args]
   (let [parses (insta/parses segment-parser (slurp (first args)))]
     (if (insta/failure? parses)
