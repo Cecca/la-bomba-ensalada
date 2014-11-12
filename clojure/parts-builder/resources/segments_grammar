@@ -1,8 +1,8 @@
-<S> := <ws*> element <ws*> element*
+<S> := <ws*> element ( <ws> | element )*
 
 <element> := <multi_line_comment> | segments | <music_function>
 
-multi_line_comment := '%{' (<ws*> | #'.*')* '%}'
+multi_line_comment := '%{' (<ws> | #'[\w\s\d\.,\']*')* '%}'
 
 segments := <ws*> segment <ws*> segments*
 
@@ -12,7 +12,9 @@ segment_id := #'[IVX]+'
 
 segment_body := (<ws*> upbeat_spacers)? <ws*> body_element ( <ws> | body_element )*
 
-<body_element> := redundant_time_sig | time_sig | spacers | bar_check
+<body_element> := redundant_time_sig | time_sig | spacers | bar_check | repeat
+
+repeat := '\\repeat' <ws*> 'volta' <ws*> #'\d+' <ws*> '{' <ws*> spacers <ws*> '}'
 
 upbeat_spacers := spacers <ws*> '|'
 
@@ -28,6 +30,6 @@ bar_check := #'\\barNumberCheck\s+#\d+' <ws*>
 
 music_function := '\\' #'[a-zA-Z]+' <ws*> music_function_args
 
-music_function_args := '{' (<ws> | #'.*')* '}' | '"' #'[\w\s\d\.]*' '"'
+music_function_args := '{' (<ws> | #'.*')* '}' | '"' #'[\w\s\d\./-]*' '"'
 
 <ws> := #'\s'
