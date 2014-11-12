@@ -1,10 +1,20 @@
+<S> := <ws*> element <ws*> element*
+
+<element> := <multi_line_comment> | segments
+
+multi_line_comment := '%{' (<ws*> | #'.*')* '%}'
+
+segments := <ws*> segment <ws*> segments*
+
 segment := segment_id <ws*> <'='> <ws*> <'{'> segment_body <'}'>
 
 segment_id := #'[IVX]+'
 
-segment_body := <ws*> body_element <ws*> body_element*
+segment_body := (<ws*> upbeat_spacers)? <ws*> body_element <ws*> body_element*
 
 <body_element> := redundant_time_sig | time_sig | spacers | bar_check
+
+upbeat_spacers := spacers <ws*> '|'
 
 redundant_time_sig := '% redundant' <ws*> time_sig
 
