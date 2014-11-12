@@ -1,19 +1,34 @@
 \version "2.18.2"
 
 %{
-  This is an auto-generated template
+   This file is part of
+
+   Mateo Flecha - La Bomba
+   -----------------------
+
+   File name : {{ filename }}
+   Part      : {{ part }}
+   Segment   : {{ segment_id }}
 %}
 
-% Needs to have in the compile path
-\include "compile-segment.ily"
+% Needs to be in the compile path
+\include "makescore/compile-segment.ily"
 
-{{ segment_id }} = {
+% Check the reference pitch
+{{ segment_id }} = \relative c' {
 
-  {{ content }}
+  {{ segment_content }}
 
 }
 
 opening = {
+
+  \key {{ key }}
+
+  \clef {{ clef }}
+
+  \set Staff.instrumentName = {{ part }}
+  \set Score.currentBarNumber = {{ current_bar_number }}
 
   {{ redundant_time }}
 
@@ -24,7 +39,7 @@ closing = {
 }
 
 \compileSegment {
-
+  \opening
   \{{ segment_id }}
-
+  \closing
 }
