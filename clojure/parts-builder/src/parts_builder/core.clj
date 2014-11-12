@@ -10,5 +10,8 @@
   "I don't do a whole lot ... yet."
   [& args]
   (let [parses (insta/parses segment-parser (slurp (first args)))]
-    (println (str "There were " (count parses) " parse trees"))
-    (clojure.pprint/pprint parses)))
+    (if (insta/failure? parses)
+      (println (insta/get-failure parses))
+      (do
+        (println (str "There were " (count parses) " parse trees"))
+        (clojure.pprint/pprint parses)))))

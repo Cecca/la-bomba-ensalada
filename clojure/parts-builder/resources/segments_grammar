@@ -28,6 +28,6 @@ bar_check := #'\\barNumberCheck\s+#\d+'
 
 music_function := '\\' #'[a-zA-Z]+' <ws> music_function_args
 
-music_function_args := '{' #'[\s.]*' '}' | '"' #'[\w\s\d\./-]*' '"'
+music_function_args := '{' #'[\w\s\d\.\\"\'|]*' '}' | '"' #'[\w\s\d\./-]*' '"'
 
 <ws> := #'\s*'
