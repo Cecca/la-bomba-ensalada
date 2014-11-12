@@ -1,6 +1,6 @@
 <S> := <ws*> element <ws*> element*
 
-<element> := <multi_line_comment> | segments
+<element> := <multi_line_comment> | segments | <music_function>
 
 multi_line_comment := '%{' (<ws*> | #'.*')* '%}'
 
@@ -25,5 +25,9 @@ time_sig := '\\time ' #'\d/\d'
 spacer := #'s\d\.?(\*\d+)?'
 
 bar_check := #'\\barNumberCheck\s+#\d+' <ws*>
+
+music_function := '\\' #'[a-zA-Z]+' <ws*> music_function_args
+
+music_function_args := '{' (<ws> | #'.*')* '}' | '"' #'.*' '"'
 
 <ws> := #'\s'
