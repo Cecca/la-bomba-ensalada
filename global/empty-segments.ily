@@ -17,6 +17,9 @@ I = {
 
 II = {
 
+  % redundant
+  \time 4/4
+
   \barNumberCheck #32
   
   s1*11
@@ -60,6 +63,7 @@ IV = {
 
 V = {
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #76
@@ -74,6 +78,7 @@ VI = {
 
   s4 s4 s4 |
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #94
@@ -88,6 +93,7 @@ VII = {
 
   s4 |
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #108
@@ -110,6 +116,7 @@ VIII = {
  
   s4 |
  
+  % redundant
   \time 3/4
   
   \barNumberCheck #121
@@ -134,6 +141,7 @@ IX = {
 
 X = {
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #151
@@ -148,6 +156,7 @@ XI = {
 
   s4 s4 |
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #168
@@ -158,6 +167,7 @@ XI = {
 
 XII = {
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #178
@@ -176,6 +186,7 @@ XII = {
 
 XIII = {
   
+  % redundant
   \time 3/4
   
   \barNumberCheck #193
@@ -190,6 +201,7 @@ XIII = {
 
 XIV = {
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #218
@@ -204,6 +216,7 @@ XV = {
 
   s4 s4 s4 |
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #233
@@ -218,6 +231,7 @@ XVI = {
 
   s4 s4 s4 |
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #242
@@ -232,6 +246,7 @@ XVII = {
 
   s4 s4 |
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #251
