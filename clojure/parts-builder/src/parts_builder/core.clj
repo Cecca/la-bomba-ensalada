@@ -6,6 +6,14 @@
 (def segment-parser
   (insta/parser (clojure.java.io/resource "segments_grammar")))
 
+(def parse-segment-file
+  [file-name]
+  (let [ptree (segment-parser (slurp file-name))]
+    (if (insta/failure? ptree)
+      (do (println (str "Parsing failed!\n" (insta/get-failure ptree)))
+          (System/exit 1))
+      ptree)))
+
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]

@@ -1,0 +1,30 @@
+\version "2.18.2"
+
+%{
+  This is an auto-generated template
+%}
+
+% Needs to have in the compile path
+\include "compile-segment.ily"
+
+{{ segment_id }} = {
+
+  {{ content }}
+
+}
+
+opening = {
+
+  {{ redundant_time }}
+
+}
+
+closing = {
+
+}
+
+\compileSegment {
+
+  \{{ segment_id }}
+
+}
