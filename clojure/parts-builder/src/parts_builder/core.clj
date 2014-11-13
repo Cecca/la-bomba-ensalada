@@ -129,9 +129,10 @@
 
 (defn -main
   [& args]
-  (let [parses (insta/parses segment-parser (slurp (first args)))]
-    (if (insta/failure? parses)
-      (println (insta/get-failure parses))
-      (do
-        (println (str "There were " (count parses) " parse trees"))
-        (clojure.pprint/pprint parses)))))
+  (let [opts (load-file (first args))
+        ptree  (segment-parser (slurp "global/empty-segments.ily"))]
+    (if (insta/failure? ptree)
+      (println (insta/get-failure ptree))
+      (doseq [p ptree]
+        (println p)
+        (make-segment-file opts (segment-tree->map p))))))
