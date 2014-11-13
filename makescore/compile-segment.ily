@@ -15,7 +15,7 @@
         (define-void-function (parser location segment)(ly:music?)
           (begin
            (display "\nCompiling standalone file")
-           (let ((book #{ \book { \score { \new Staff \new Voice { \bar "" $segment } } } #} ))
+           (let ((book #{ \book { \score { \new Staff \new Voice { \bar "" $segment } \midi{} \layout{} } } #} ))
              (ly:book-process book #{ \paper {} #} #{ \layout {} #} (ly:parser-output-name parser)))))))
      (begin
       (define compileSegment
