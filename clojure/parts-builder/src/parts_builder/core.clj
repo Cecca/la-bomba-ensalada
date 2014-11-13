@@ -1,7 +1,14 @@
 (ns parts-builder.core
   (:gen-class)
   (:require [instaparse.core :as insta]
+            [selmer.parser :as selm]
+            [clojure.java.io :as io]
             [clojure.pprint]))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Parsing
+;;;
 
 (def segment-parser
   (insta/parser (clojure.java.io/resource "segments_grammar")))
@@ -13,6 +20,11 @@
       (do (println (str "Parsing failed!\n" (insta/get-failure ptree)))
           (System/exit 1))
       ptree)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Parse tree conversion
+;;;
 
 (defmulti music->str first)
 (defmethod music->str :time_sig
@@ -73,6 +85,47 @@
      :segment_content (body->str body)
      :opening_content (body->opening body)
      :current_bar_number (body->bar-check body)}))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Output production
+;;;
+
+(def roman-map
+  (into {}
+        (map (fn [r n] [r (format "%02d" (inc n))])
+             ["I" "II" "III" "IV" "V" "VI"
+              "VII" "VIII" "IX" "X" "XI"
+              "XII" "XIII" "XIV" "XV" "XVI"
+              "XVII" "XVIII" "XIX" "XX" "XXI" "XXII"]
+             (range 23))))
+
+(defn roman->num
+  [roman]
+  (get roman-map roman (str "ERROR" roman)))
+
+(defn build-filename
+  [output-dir segment]
+  (str output-dir "/" (roman->num segment) ".ily"))
+
+(defn fill-template
+  [vals]
+  (selm/render-file "segment_template" vals))
+
+(defn make-segment-file
+  [opts segment-map]
+  (let [fname (build-filename (:out-dir opts)
+                              (:segment_id segment-map))
+        vals (assoc (merge opts segment-map) :filename fname)]
+    (if (and (not (:force opts)) (. (io/file fname) exists))
+      (throw (RuntimeException.
+              "Set :force true in options map to overwrite existing files"))
+      (spit fname (fill-template vals)))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Main
+;;;
 
 (defn -main
   [& args]
