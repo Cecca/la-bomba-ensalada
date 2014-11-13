@@ -59,11 +59,10 @@
 (defn body->str
   [body]
   (apply str
-         "\n\n"
          (interleave
           (map music->str
                (filter #(not (= :redundant_time_sig (first %))) body))
-          (repeat "\n\n"))))
+          (repeat "\n\n  "))))
 
 (defn body->opening
   [body]
@@ -71,7 +70,7 @@
          (interleave
           (map music->str
                (filter #(= :redundant_time_sig (first %)) body))
-          (repeat "\n\n"))))
+          (repeat "\n  "))))
 
 (defn body->bar-check
   [body]
@@ -117,6 +116,7 @@
   (let [fname (build-filename (:out-dir opts)
                               (:segment_id segment-map))
         vals (assoc (merge opts segment-map) :filename fname)]
+    (println "Generating file " fname)
     (if (and (not (:force opts)) (. (io/file fname) exists))
       (throw (RuntimeException.
               "Set :force true in options map to overwrite existing files"))
@@ -134,5 +134,4 @@
     (if (insta/failure? ptree)
       (println (insta/get-failure ptree))
       (doseq [p ptree]
-        (println p)
         (make-segment-file opts (segment-tree->map p))))))
