@@ -1,0 +1,64 @@
+\version "2.18.2"
+
+%{
+   This file is part of
+
+   Mateo Flecha - La Bomba
+   -----------------------
+
+   File name : parts/soprano/07.ily
+   Part      : soprano
+   Segment   : VII
+%}
+
+% Needs to be in the compile path
+\include "makescore/compile-segment.ily"
+
+% Check the reference pitch
+VII = \relative c' {
+
+  s4 
+
+  \barNumberCheck #108
+
+  s1*9
+
+  \time 2/4
+
+  s2*1
+
+  \time 3/4
+
+  s2.*2
+
+  s4
+
+  s4
+
+  
+
+}
+
+opening = {
+
+  \key bes \major
+
+  \clef "treble"
+
+  \set Staff.instrumentName = "soprano"
+  \set Score.currentBarNumber = #108
+
+  \time 4/4
+  
+
+}
+
+closing = {
+
+}
+
+\compileSegment {
+  \opening
+  \VII
+  \closing
+}
