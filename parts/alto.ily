@@ -56,4 +56,32 @@ alto = {
 
 }
 
+lyricsAlto = {
+  
+  \LyricsI
+  \LyricsII
+  \LyricsIII
+  \LyricsIV
+  \LyricsV
+  \LyricsVI 
+  \LyricsVII
+  \LyricsVIII
+  \LyricsIX
+  \LyricsX
+  \LyricsXI
+  \LyricsXII
+  \LyricsXIII
+  \LyricsXIV
+  \LyricsXV
+  \LyricsXVI
+  \LyricsXVII
+  \LyricsXVIII
+  \LyricsXIX
+  \LyricsXX
+  \LyricsXXI
+  \LyricsXXII
+
+}
+
+
 \compileSegment \alto
