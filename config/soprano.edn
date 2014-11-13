@@ -1,0 +1,4 @@
+{:out-dir "parts/soprano"
+ :part "soprano"
+ :key "bes \\major"
+ :clef "treble"}

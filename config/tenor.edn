@@ -1,0 +1,4 @@
+{:out-dir "parts/tenor"
+ :part "tenor"
+ :key "bes \\major"
+ :clef "treble_8"}
