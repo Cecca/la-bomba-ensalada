@@ -19,10 +19,17 @@ I = \relative c' {
 
   \time 4/4
 
-  s1*31
+  s1*3
 
   
 
+}
+
+LyricsI = \lyricmode {
+  
+  % Lyrics here
+
+  li lo la lu
 }
 
 opening = {
@@ -43,7 +50,15 @@ closing = {
 }
 
 \compileSegment {
+  
   \opening
-  \I
+  <<
+    \new Voice = "mus12345" {
+      \I
+    }
+    \new Lyrics \lyricsto "mus12345" {
+      \LyricsI
+    }
+  >>
   \closing
 }

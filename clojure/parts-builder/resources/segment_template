@@ -21,6 +21,12 @@
 
 }
 
+Lyrics{{ segment_id }} = \lyricmode {
+  
+  % Lyrics here
+
+}
+
 opening = {
 
   \key {{ key }}
@@ -40,6 +46,13 @@ closing = {
 
 \compileSegment {
   \opening
-  \{{ segment_id }}
+  <<
+    \new Voice = "mus12345" {
+      \{{ segment_id }}
+    }
+    \new Lyrics \lyricsto "mus12345" {
+      \Lyrics{{ segment_id }}
+    }
+  >>
   \closing
 }

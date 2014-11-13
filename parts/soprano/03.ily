@@ -37,6 +37,12 @@ III = \relative c' {
 
 }
 
+LyricsIII = \lyricmode {
+  
+  % Lyrics here
+
+}
+
 opening = {
 
   \key bes \major
@@ -57,6 +63,13 @@ closing = {
 
 \compileSegment {
   \opening
-  \III
+  <<
+    \new Voice = "mus12345" {
+      \III
+    }
+    \new Lyrics \lyricsto "mus12345" {
+      \LyricsIII
+    }
+  >>
   \closing
 }

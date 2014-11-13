@@ -31,6 +31,12 @@ IV = \relative c' {
 
 }
 
+LyricsIV = \lyricmode {
+  
+  % Lyrics here
+
+}
+
 opening = {
 
   \key bes \major
@@ -50,6 +56,13 @@ closing = {
 
 \compileSegment {
   \opening
-  \IV
+  <<
+    \new Voice = "mus12345" {
+      \IV
+    }
+    \new Lyrics \lyricsto "mus12345" {
+      \LyricsIV
+    }
+  >>
   \closing
 }
