@@ -58,7 +58,20 @@ I = \relative c' {
 
 LyricsI = \lyricmode {
   
-  % Lyrics here
+  ¡Va -- yan los car -- gos al mar
+  que nos y -- mos a -- ne -- gar!
+  ¡Va -- yan va -- yan los car -- gos al mar
+  que nos y -- mos a -- ne -- gar!
+  ¡Do re -- me -- dio no se_es -- pe -- ra!
+  ¡Do re -- me -- dio no se_es -- pe -- ra!
+  
+  ¡A l'es -- co -- ta so -- co -- rred!
+  ¡A l'es -- co -- ta so -- co -- rred!
+  ¡so -- co -- rred!
+
+  ¡Vo -- so -- tros id al ti -- món!
+  ¡Qué_es -- pa -- cio! ¡Co -- rred, co -- rred!
+  ¿No veis nues -- tra per -- di -- ción?
 
 }
 
@@ -71,7 +84,7 @@ opening = {
   \set Staff.instrumentName = "soprano"
   \set Score.currentBarNumber = #0
 
-
+  \tempo 4=160
 
 }
 
