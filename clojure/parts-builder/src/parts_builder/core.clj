@@ -37,6 +37,9 @@
               e
               (music->str e)))
           (repeat " "))))
+(defmethod music->str :redundant_time_sig
+  [[_ time-sig]]
+  (music->str time-sig))
 (defmethod music->str :default
   [& args]
   (str "ERROR" args))
@@ -50,11 +53,26 @@
                (filter #(not (= :redundant_time_sig (first %))) body))
           (repeat "\n\n"))))
 
+(defn body->opening
+  [body]
+  (apply str
+         (interleave
+          (map music->str
+               (filter #(= :redundant_time_sig (first %)) body))
+          (repeat "\n\n"))))
+
+(defn body->bar-check
+  [body]
+  (second
+   (first (filter #(= :bar_check (first %)) body))))
+
 (defn segment-tree->map
   [segment-tree]
   (let [[[_ id] [_ & body]] (rest segment-tree)]
     {:segment_id id
-     :body (body->str body)}))
+     :body (body->str body)
+     :opening_content (body->opening body)
+     :bar_check (body->bar-check body)}))
 
 (defn -main
   [& args]
