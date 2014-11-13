@@ -14,17 +14,6 @@
           (System/exit 1))
       ptree)))
 
-(defn segment-tree->map
-  [segment-tree]
-  (when (= :segment (first segment-tree))
-    (into {}
-          (for [e (rest segment-tree)]
-            (let [k (first e)
-                  v (rest e)]
-              (if (= 1 (count v))
-                [k (first v)]
-                [k v]))))))
-
 (defmulti music->str first)
 (defmethod music->str :time_sig
   [[_ sig]]
@@ -61,7 +50,7 @@
                (filter #(not (= :redundant_time_sig (first %))) body))
           (repeat "\n\n"))))
 
-(defn segment-tree->template-vars
+(defn segment-tree->map
   [segment-tree]
   (let [[[_ id] [_ & body]] (rest segment-tree)]
     {:segment_id id
