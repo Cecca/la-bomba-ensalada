@@ -71,7 +71,7 @@ opening = {
   \set Staff.instrumentName = "soprano"
   \set Score.currentBarNumber = #0
 
-  
+
 
 }
 
