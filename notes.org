@@ -1,3 +1,101 @@
+* Progress
+** Soprano [0/22] [0%]
+   - [ ] I
+   - [ ] II
+   - [ ] II
+   - [ ] IV
+   - [ ] V
+   - [ ] VI
+   - [ ] VII
+   - [ ] VII
+   - [ ] IX
+   - [ ] X
+   - [ ] XI
+   - [ ] XII
+   - [ ] XIII
+   - [ ] XIV
+   - [ ] XV
+   - [ ] XVI
+   - [ ] XVII
+   - [ ] XVIII
+   - [ ] XIX
+   - [ ] XX
+   - [ ] XXI
+   - [ ] XXII
+
+** Alto [0/22] [0%]
+   - [ ] I
+   - [ ] II
+   - [ ] II
+   - [ ] IV
+   - [ ] V
+   - [ ] VI
+   - [ ] VII
+   - [ ] VII
+   - [ ] IX
+   - [ ] X
+   - [ ] XI
+   - [ ] XII
+   - [ ] XIII
+   - [ ] XIV
+   - [ ] XV
+   - [ ] XVI
+   - [ ] XVII
+   - [ ] XVIII
+   - [ ] XIX
+   - [ ] XX
+   - [ ] XXI
+   - [ ] XXII
+
+** Tenor [0/22] [0%]
+   - [ ] I
+   - [ ] II
+   - [ ] II
+   - [ ] IV
+   - [ ] V
+   - [ ] VI
+   - [ ] VII
+   - [ ] VII
+   - [ ] IX
+   - [ ] X
+   - [ ] XI
+   - [ ] XII
+   - [ ] XIII
+   - [ ] XIV
+   - [ ] XV
+   - [ ] XVI
+   - [ ] XVII
+   - [ ] XVIII
+   - [ ] XIX
+   - [ ] XX
+   - [ ] XXI
+   - [ ] XXII
+
+** Bass [0/22] [0%]
+   - [ ] I
+   - [ ] II
+   - [ ] II
+   - [ ] IV
+   - [ ] V
+   - [ ] VI
+   - [ ] VII
+   - [ ] VII
+   - [ ] IX
+   - [ ] X
+   - [ ] XI
+   - [ ] XII
+   - [ ] XIII
+   - [ ] XIV
+   - [ ] XV
+   - [ ] XVI
+   - [ ] XVII
+   - [ ] XVIII
+   - [ ] XIX
+   - [ ] XX
+   - [ ] XXI
+   - [ ] XXII
+
+
 * Segments
   |---------+-------+-----+--------+-------------------------------------------|
   | segment | start | end | length | notes                                     |
