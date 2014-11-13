@@ -123,3 +123,7 @@
   | XXI     |   311 | 321 |     10 | -                                         |
   | XXII    |   322 | 336 |     14 | shift of 2 quarters w.r.t. the 'original' |
   #+TBLFM: $4=$3-$2
+
+* Changelog
+** Version 0.0.1
+   Empty score with everything set up
