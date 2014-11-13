@@ -284,7 +284,9 @@ XX = {
   
   \barNumberCheck #307
   
-  s2.*4
+  \repeat volta 2 {
+    s2.*4
+  }
   
 }
 

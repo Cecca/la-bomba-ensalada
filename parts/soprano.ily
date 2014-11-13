@@ -52,6 +52,8 @@ soprano = {
   \XXI
   \XXII
 
+  \bar "|."
+
 }
 
 \compileSegment \soprano
