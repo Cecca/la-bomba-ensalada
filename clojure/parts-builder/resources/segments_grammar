@@ -1,0 +1,33 @@
+<S> := <ws> ( element <ws> )* <ws>
+
+<element> := <multi_line_comment> | segment | <music_function>
+
+multi_line_comment := '%{' #'[\w\s\d\.,\']*' '%}'
+
+segment := segment_id <ws> <'='> <ws> <'{'> <ws> segment_body <'}'>
+
+segment_id := #'[IVX]+'
+
+segment_body := ( time_sig | redundant_time_sig ) <ws> ( upbeat_spacers <ws> )? ( body_element <ws> )*
+
+<body_element> := time_sig | spacers | bar_check | repeat
+
+repeat := '\\repeat' <ws> 'volta' <ws> #'\d+' <ws> '{' <ws> spacers <ws> '}'
+
+upbeat_spacers := spacers <ws> <'|'>
+
+redundant_time_sig := <'% redundant'> <ws> time_sig
+
+time_sig := <'\\time '> #'\d/\d'
+
+<spacers> := spacer <ws> spacers*
+
+spacer := #'s\d\.?(\*\d+)?'
+
+bar_check := <'\\barNumberCheck'> <ws> #'#\d+'
+
+music_function := '\\' #'[a-zA-Z]+' <ws> music_function_args
+
+music_function_args := '{' #'[\w\s\d\.\\"\'|]*' '}' | '"' #'[\w\s\d\./-]*' '"'
+
+<ws> := #'\s*'

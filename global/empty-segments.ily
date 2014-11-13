@@ -17,6 +17,9 @@ I = {
 
 II = {
 
+  % redundant
+  \time 4/4
+
   \barNumberCheck #32
   
   s1*11
@@ -26,7 +29,10 @@ II = {
 
 III = {
   
-  s4
+  % redundant
+  \time 4/4
+
+  s4 |
   
   \time 3/4
   
@@ -60,6 +66,7 @@ IV = {
 
 V = {
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #76
@@ -71,9 +78,10 @@ V = {
 }
 
 VI = {
-  
+
+  % redundant
   \time 4/4
-  
+
   s4 s4 s4 |
   
   \barNumberCheck #94
@@ -85,9 +93,10 @@ VI = {
 }
 
 VII = {
-  
+
+  % redundant
   \time 4/4
-  
+
   s4 |
   
   \barNumberCheck #108
@@ -107,9 +116,10 @@ VII = {
 }
 
 VIII = {
-  
+ 
+  % redundant
   \time 3/4
-  
+
   s4 |
   
   \barNumberCheck #121
@@ -134,6 +144,7 @@ IX = {
 
 X = {
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #151
@@ -145,9 +156,10 @@ X = {
 }
 
 XI = {
-  
+
+  % redundant
   \time 4/4
-  
+
   s4 s4 |
   
   \barNumberCheck #168
@@ -158,6 +170,7 @@ XI = {
 
 XII = {
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #178
@@ -176,6 +189,7 @@ XII = {
 
 XIII = {
   
+  % redundant
   \time 3/4
   
   \barNumberCheck #193
@@ -190,6 +204,7 @@ XIII = {
 
 XIV = {
   
+  % redundant
   \time 4/4
   
   \barNumberCheck #218
@@ -201,9 +216,10 @@ XIV = {
 }
 
 XV = {
-  
+
+  % redundant
   \time 4/4
-  
+
   s4 s4 s4 |
   
   \barNumberCheck #233
@@ -215,9 +231,10 @@ XV = {
 }
 
 XVI = {
-  
+
+  % redundant
   \time 4/4
-  
+
   s4 s4 s4 |
   
   \barNumberCheck #242
@@ -229,9 +246,10 @@ XVI = {
 }
 
 XVII = {
-  
+
+  % redundant
   \time 4/4
-  
+
   s4 s4 |
   
   \barNumberCheck #251
@@ -266,7 +284,9 @@ XX = {
   
   \barNumberCheck #307
   
-  s2.*4
+  \repeat volta 2 {
+    s2.*4
+  }
   
 }
 

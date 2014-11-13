@@ -2,7 +2,7 @@
 %%
 %% compile-segment.ily
 %%
-%% Idea presa da 
+%% Idea presa da
 %%
 %%    https://git.ursliska.de/beautifulscores/das-trunkne-lied/blob/master/library/ly/makescore/compile-segment.ily
 %%
@@ -19,5 +19,4 @@
              (ly:book-process book #{ \paper {} #} #{ \layout {} #} (ly:parser-output-name parser)))))))
      (begin
       (define compileSegment
-        (define-void-function (parser location segment)(ly:music?)
-          (display "\n**Using void definition**")))))
+        (define-void-function (parser location segment)(ly:music?)))))

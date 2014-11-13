@@ -1,0 +1,4 @@
+{:out-dir "parts/alto"
+ :part "alto"
+ :key "bes \\major"
+ :clef "treble"}

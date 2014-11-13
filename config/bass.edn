@@ -1,0 +1,4 @@
+{:out-dir "parts/bass"
+ :part "bass"
+ :key "bes \\major"
+ :clef "bass"}

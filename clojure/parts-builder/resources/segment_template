@@ -1,0 +1,58 @@
+\version "2.18.2"
+
+%{
+   This file is part of
+
+   Mateo Flecha - La Bomba
+   -----------------------
+
+   File name : {{ filename }}
+   Part      : {{ part }}
+   Segment   : {{ segment_id }}
+%}
+
+% Needs to be in the compile path
+\include "makescore/compile-segment.ily"
+
+% Check the reference pitch
+{{ segment_id }} = \relative c' {
+
+  {{ segment_content }}
+
+}
+
+Lyrics{{ segment_id }} = \lyricmode {
+  
+  % Lyrics here
+
+}
+
+opening = {
+
+  \key {{ key }}
+
+  \clef "{{ clef }}"
+
+  \set Staff.instrumentName = "{{ part }}"
+  \set Score.currentBarNumber = {{ current_bar_number }}
+
+  {{ opening_content }}
+
+}
+
+closing = {
+
+}
+
+\compileSegment {
+  \opening
+  <<
+    \new Voice = "mus12345" {
+      \{{ segment_id }}
+    }
+    \new Lyrics \lyricsto "mus12345" {
+      \Lyrics{{ segment_id }}
+    }
+  >>
+  \closing
+}
