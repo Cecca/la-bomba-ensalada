@@ -30,7 +30,7 @@ opening = {
   \set Staff.instrumentName = {{ part }}
   \set Score.currentBarNumber = {{ current_bar_number }}
 
-  {{ redundant_time }}
+  {{ opening_content }}
 
 }
 

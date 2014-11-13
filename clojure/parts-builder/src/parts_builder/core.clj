@@ -70,9 +70,9 @@
   [segment-tree]
   (let [[[_ id] [_ & body]] (rest segment-tree)]
     {:segment_id id
-     :body (body->str body)
+     :segment_content (body->str body)
      :opening_content (body->opening body)
-     :bar_check (body->bar-check body)}))
+     :current_bar_number (body->bar-check body)}))
 
 (defn -main
   [& args]
