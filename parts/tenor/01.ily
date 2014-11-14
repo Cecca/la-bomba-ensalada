@@ -19,9 +19,40 @@ I = \relative c' {
 
   \time 4/4
 
-  s1*31
-
+  d2. g,4 |
+  d' g, d' ees |
+  f2 bes, |
+  r4 bes8 bes bes4 g |
+  a( f) g2 |
+  a2 r4 d8 d |
+  d4 d d d |
+  a2 ees'4. ees8 |
+  d4 g, d' ees |
+  f4 d2( c4) |
+  d2 r4 a8 a |
+  a4 a a a |
+  g1 |
+  bes4. bes8 c4 d |
+  g, bes bes( a) |
+  bes1 |
+  f'2. ees4 |
+  d( f bes,) c |
+  g a bes( g) |
+  a1 |
+  r2 r4 a8 a |
+  bes a bes c d2 |
+  r2 r4 a8 a |
+  bes a bes c d2 |
+  r4 a8 a d4 f |
+  d4 d8 c bes4 a |
+  g2 r4 d' |
+  g4 g8 f ees d c4 |
+  r2 r4 c |
+  c2 c4 c |
+  c c ees2 |
   
+
+  \barNumberCheck #31
 
 }
 
@@ -40,7 +71,7 @@ opening = {
   \set Staff.instrumentName = "tenor"
   \set Score.currentBarNumber = #0
 
-  
+  \tempo 4=160
 
 }
 
