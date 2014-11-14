@@ -19,9 +19,42 @@ I = \relative c' {
 
   \time 4/4
 
-  s1*31
-
+  r1 |
+  r1 |
+  d2. g,4 |
   
+  d' g, d' ees |
+  f( d2 c4) |
+  d2 r4 a8 a |
+  a4 a a a |
+  g2 g'4. g8 |
+  g4 d d bes |
+  c( f,) g2 |
+  a r4 d8 d |
+  
+  d4 d d d |
+  bes1 |
+  d4. d8 ees4 f |
+  g f ees2 |
+  d2 f ~ |
+  f4 ees d c |
+  bes4. c8 d ees f4 |
+  ees4 d2( c4) |
+  d2 r4 d8 d |
+  g f g f d2 |
+  
+  r2 r4 d8 d |
+  g f g f d2 |
+  r2 r4 f8 f |
+  d2 r |
+  r2 r4 d |
+  ees ees8 d c4 b |
+  c2 r8 g' aes4 |
+  aes8 g f ees f4 f |
+  f2 f4 f |
+  f f g2 |
+
+  %\barNumberCheck #31
 
 }
 
@@ -40,7 +73,7 @@ opening = {
   \set Staff.instrumentName = "alto"
   \set Score.currentBarNumber = #0
 
-  
+  \tempo 4 = 170
 
 }
 
