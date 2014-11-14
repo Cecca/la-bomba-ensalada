@@ -26,7 +26,7 @@ I = \relative c' {
   a( f) g2 |
   a2 r4 d8 d |
   d4 d d d |
-  a2 ees'4. ees8 |
+  bes2 ees4. ees8 |
   d4 g, d' ees |
   f4 d2( c4) |
   d2 r4 a8 a |
@@ -50,15 +50,27 @@ I = \relative c' {
   r2 r4 c |
   c2 c4 c |
   c c ees2 |
-  
-
-  \barNumberCheck #31
 
 }
 
 LyricsI = \lyricmode {
   
-  % Lyrics here
+  ¡Bom -- ba, bom -- ba, y_a -- gua fue -- ra!
+  
+  ¡Va -- yan los car -- gos al mar
+  que nos y -- mos a -- ne -- gar!
+  ¡Va -- yan va -- yan los car -- gos al mar
+  que nos y -- mos a -- ne -- gar!
+  ¡Do re -- me -- dio no se_es -- pe -- ra!
+  ¡Do re -- me -- dio no se_es -- pe -- ra!
+  
+  ¡A l'es -- co -- ta so -- co -- rred!
+  ¡A l'es -- co -- ta so -- co -- rred!
+  ¡so -- co -- rred!
+
+  ¡Vo -- so -- tros id al ti -- món!
+  ¡Qué_es -- pa -- cio! ¡Co -- rred, co -- rred!
+  ¿No veis nues -- tra per -- di -- ción?
 
 }
 

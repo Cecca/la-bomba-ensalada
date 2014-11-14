@@ -52,5 +52,7 @@
   >>
   
   \layout {}
-  \midi {}
+  \midi {
+    \tempo 4=170
+  }
 }
