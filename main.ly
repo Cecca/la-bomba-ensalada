@@ -28,12 +28,18 @@
     } {
       \new Voice = "soprano" \soprano
     }
+    \new Lyrics \lyricsto "soprano" {
+      \lyricsSoprano
+    }
     
     \new Staff \with {
       midiInstrument = "acoustic grand"
       instrumentName = "Contralto"
     } {
       \new Voice = "alto" \alto
+    }
+    \new Lyrics \lyricsto "alto" {
+      \lyricsAlto
     }
     
     \new Staff \with {
@@ -42,12 +48,18 @@
     } {
       \new Voice = "tenor" \tenor
     }
+    \new Lyrics \lyricsto "tenor" {
+      \lyricsTenor
+    }
     
     \new Staff \with {
       midiInstrument = "acoustic grand"
       instrumentName = "Basso"
     } {
       \new Voice = "bass" \bass
+    }
+    \new Lyrics \lyricsto "bass" {
+      \lyricsBass
     }
   >>
   
