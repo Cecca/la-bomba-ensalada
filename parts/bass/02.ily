@@ -42,7 +42,11 @@ II = \relative c' {
 
 LyricsII = \lyricmode {
   
-  % Lyrics here
+  ¡Ha -- zia acá con -- tra -- pe -- sad!
+  ¡Oh, que la na -- ve se_a -- sue -- la!
+  
+  ¡Ya no_ay tiem -- po ni lu -- gar,
+  que la nau se_a -- bre por me -- dio!
 
 }
 
