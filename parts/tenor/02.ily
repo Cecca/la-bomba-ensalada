@@ -19,11 +19,22 @@ II = \relative c' {
 
   \barNumberCheck #32
 
-  s1*11
+  r1 |
+  r1 |
+  r2 d8 d g4 ~ |
+  g8 f ees d c g' g f |
+  ees4 d4. d8 c4 |
+  d8 a d4 d8 c bes a |
+  g4 g8 g c4. bes8 |
+  a g f4( bes f |
+  g a) bes2 |
+  r8 d4 c8 d a d bes |
+  a4 r8 d4 c8 f8. f16 |
+  ees8 d c4 bes 
 
-  s4*3
+  %s1*11
 
-  
+  %s4*3
 
 }
 
@@ -43,11 +54,13 @@ opening = {
   \set Score.currentBarNumber = #32
 
   \time 4/4
-  
+  \tempo 4=160
 
 }
 
 closing = {
+
+  r4
 
 }
 
