@@ -32,15 +32,16 @@ II = \relative c' {
   r1 |
   r2 r4
 
-  %s1*11
-
-  %s4*3  
-
 }
 
 LyricsII = \lyricmode {
   
-  % Lyrics here
+  Es -- sas gú -- me -- nas cor -- tad
+  por -- que se_a -- mai -- ne la ve -- la.
+  
+  ¡Man -- dad ca -- la -- fa -- te -- ar
+  man -- dad ca -- la -- fa -- te -- ar
+  que qui -- zá da -- rá re -- me -- dio!
 
 }
 
