@@ -47,9 +47,9 @@
    - [ ] XXI
    - [ ] XXII
 
-** Tenor [1/22] [4%]
+** Tenor [2/22] [9%]
    - [X] I
-   - [ ] II
+   - [X] II
    - [ ] II
    - [ ] IV
    - [ ] V
