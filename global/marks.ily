@@ -5,7 +5,7 @@
   segments, filled with spacer rests.
 %}
 
-\include "../makescore/compile-segment.ily"
+\include "makescore/compile-segment.ily"
 
 marks = {
   

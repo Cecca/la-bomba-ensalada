@@ -14,6 +14,7 @@
 
 \include "makescore/init-score.ily"
 
+\include "global/marks.ily"
 \include "parts/soprano.ily"
 \include "parts/alto.ily"
 \include "parts/tenor.ily"
@@ -26,7 +27,10 @@
       midiInstrument = "acoustic grand"
       instrumentName = "Soprano"
     } {
+      <<
       \new Voice = "soprano" \soprano
+      \new Voice = "marks" \marks
+      >>
     }
     \new Lyrics \lyricsto "soprano" {
       \lyricsSoprano
