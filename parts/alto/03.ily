@@ -49,7 +49,12 @@ III = \relative c' {
 
 LyricsIII = \lyricmode {
   
-  % Lyrics here
+  ¿Qué ha -- re -- mos?
+  ¿Qué ha -- re -- mos?
+  
+  ¡Oh, que_es -- tá tan bra -- vo_el mar,
+  que to -- dos pe -- re -- çe -- re -- mos!
+  Pi -- pas y ta -- blas to -- me -- mos.
 
 }
 
