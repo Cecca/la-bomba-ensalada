@@ -41,7 +41,7 @@ III = \relative c' {
   bes4 bes f' g |
   f2 bes, |
   r1 |
-  r8 d, g f g4 f8 d |
+  r8 d g f g4 f8 d |
 
   \time 2/4
 
