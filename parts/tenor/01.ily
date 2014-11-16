@@ -24,9 +24,14 @@ I = \relative c' {
   f2 bes, |
   r4 bes8 bes bes4 g |
   a( f) g2 |
-  a2 r4 d8 d |
-  d4 d d d |
-  bes2 ees4. ees8 |
+  
+% Some editions have this part and the alto switched
+%       vv ->
+  a2 r4 a8 a |
+  a4 a a a |
+  g2 ees'4. ees8 |
+% ^^
+  
   d4 g, d' ees |
   f4 d2( c4) |
   d2 r4 a8 a |
