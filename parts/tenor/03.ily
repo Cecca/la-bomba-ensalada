@@ -19,12 +19,11 @@ III = \relative c' {
 
   d8 d8 | 
 
-  \time 3/4
-
   \barNumberCheck #44
 
-  d4 d r |
-  ees8 ees ees4 ees |
+  d4 d r ees8 ees 
+  \time 3/4
+  ees4 ees r |
   d4 d f |
   ees2 d4 |
   bes c2 |

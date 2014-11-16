@@ -24,10 +24,11 @@ marks = {
 
   % III ---------------------
   s4 |
-  \time 3/4
   \barNumberCheck #44
   \mark \default
-  s2.*9
+  s1 |
+  \time 3/4
+  s2.*8
   \time 4/4
   s1*5
   \time 2/4
