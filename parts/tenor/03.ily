@@ -24,7 +24,7 @@ III = \relative c' {
   d4 d r ees8 ees 
   \time 3/4
   ees4 ees r |
-  d4 d f |
+  d2 f4 |
   ees2 d4 |
   bes c2 |
   d2. |
@@ -50,7 +50,7 @@ LyricsIII = \lyricmode {
   
   ¿Qué ha -- re -- mos?
   ¿Qué ha -- re -- mos?
-  ¿Si a -- pro -- ve -- cha -- rá na -- dar?
+  ¿Si_a -- pro -- ve -- cha -- rá na -- dar?
   
   que to -- dos pe -- re -- çe -- re -- mos!
   Pi -- pas y ta -- blas to -- me -- mos.
