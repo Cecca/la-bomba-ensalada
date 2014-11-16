@@ -38,8 +38,8 @@ III = \relative c' {
   \time 4/4
 
   r4 bes bes2 |
-  bes bes f' g |
-  f2 bes |
+  bes4 bes f' g |
+  f2 bes, |
   r1 |
   r8 d, g f g4 f8 d |
 
