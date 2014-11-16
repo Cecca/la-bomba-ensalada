@@ -26,13 +26,12 @@ I = \relative c' {
   d' g, d' ees |
   f( d2 c4) |
   
-% TODO Starting from the third beat, we could 
-%% switch the tenor and the alto
-%%      vv
-  d2 r4 a8 a |
-  a4 a a a |
-  g2 g'4. g8 |
-% ^^
+% Some editions have this part and the alto switched
+%       vv
+  d2 r4 d8 d |
+  d4 d d d |
+  bes2 g'4. g8 |
+% ^^^
   g4 d d bes |
   c( f,) g2 |
   a r4 d8 d |
