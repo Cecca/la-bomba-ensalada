@@ -17,29 +17,44 @@
 % Check the reference pitch
 III = \relative c' {
 
-  s4 
+  bes'8 bes 
 
   \time 3/4
 
   \barNumberCheck #44
 
-  s2.*9
+  bes4 bes r |
+  bes8 bes bes4 bes |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  a2 a4 |
+  bes2 a4 |
+  bes c2 |
 
   \time 4/4
 
-  s1*5
+  d4 d d2 |
+  d4 d c bes |
+  bes( a) bes r8 f |
+  g f g4 f8 d ees4 |
+  d2 r |
 
   \time 2/4
 
-  s2*1
-
-  
+  r2 |
 
 }
 
 LyricsIII = \lyricmode {
   
-  % Lyrics here
+  ¿Qué ha -- re -- mos?
+  ¿Qué ha -- re -- mos?
+  
+  ¡Oh, que_es -- tá tan bra -- vo_el mar,
+  que to -- dos pe -- re -- çe -- re -- mos!
+  Pi -- pas y ta -- blas to -- me -- mos.
 
 }
 
@@ -54,6 +69,7 @@ opening = {
 
   \time 4/4
   
+  \partial 4
 
 }
 
