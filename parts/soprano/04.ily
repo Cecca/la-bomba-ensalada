@@ -41,7 +41,7 @@ IV = \relative c' {
 
   \time 4/4
 
-  f2 f4. f8 |
+  fis2 fis4. fis8 |
   fis1 |
 
 }
