@@ -17,13 +17,13 @@
 % Check the reference pitch
 III = \relative c' {
 
-  d8 d |
+  g'8 g |
 
   \barNumberCheck #44
 
-  d4 d r d8 d |
+  g4 g r g8 g |
   \time 3/4 
-  d4 d r |
+  g4 g r |
   r2. |
   r2. |
   r2. |
