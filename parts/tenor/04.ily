@@ -20,20 +20,35 @@ IV = \relative c' {
   \time 3/4
 
   \barNumberCheck #59
-
-  s2.*15
+  
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  d4 d g, |
+  a2 r4 |
+  c4 a2 |
+  g r4 |
+  r2. |
+  r2. |
+  r2. |
+  r2 a4 |
+  g4. a8 g4 |
+  a2 f4 |
+  g4. a8 g4 |
 
   \time 4/4
 
-  s1*2
-
-  
+  a2 bes4. bes8 |
+  a1 |
 
 }
 
 LyricsIV = \lyricmode {
   
-  % Lyrics here
+  Mas, tris -- te yo, ¿que ha -- ré?
+  Que yo, que no sé na -- dar, ¡mo -- ri -- ré!
+  ¡mo -- ri -- ré!
 
 }
 
