@@ -1,9 +1,9 @@
 * Progress
-** Soprano [3/22] [13%]
+** Soprano [4/22] [18%]
    - [X] I
    - [X] II
    - [X] II
-   - [ ] IV
+   - [X] IV
    - [ ] V
    - [ ] VI
    - [ ] VII
@@ -71,11 +71,11 @@
    - [ ] XXI
    - [ ] XXII
 
-** Bass [3/22] [13%]
+** Bass [4/22] [18%]
    - [X] I
    - [X] II
    - [X] II
-   - [ ] IV
+   - [X] IV
    - [ ] V
    - [ ] VI
    - [ ] VII
