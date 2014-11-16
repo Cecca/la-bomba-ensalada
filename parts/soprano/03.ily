@@ -19,12 +19,11 @@ III = \relative c' {
 
   bes'8 bes 
 
-  \time 3/4
-
   \barNumberCheck #44
 
+  bes4 bes r bes8 bes |
+  \time 3/4
   bes4 bes r |
-  bes8 bes bes4 bes |
   r2. |
   r2. |
   r2. |

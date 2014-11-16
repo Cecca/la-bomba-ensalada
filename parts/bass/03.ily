@@ -19,14 +19,13 @@ III = \relative c' {
 
   g8 g |
 
-  \time 3/4
-
   \barNumberCheck #44
 
-  g4 g r |
-  ees8 ees ees4 ees |
+  g4 g r ees8 ees
+  \time 3/4
+  ees4 ees r |
   
-  bes'4 bes a |
+  bes'2 a4 |
   g2 f4 |
   g ees2 |
   d2. |
@@ -53,7 +52,7 @@ LyricsIII = \lyricmode {
   
   ¿Qué ha -- re -- mos?
   ¿Qué ha -- re -- mos?
-  ¿Si a -- pro -- ve -- cha -- rá na -- dar?
+  ¿Si_a -- pro -- ve -- cha -- rá na -- dar?
   
   que to -- dos pe -- re -- çe -- re -- mos!
   Pi -- pas y ta -- blas to -- me -- mos.
