@@ -19,9 +19,9 @@ VI = \relative c' {
 
   s4 s4 s4 
 
-  \barNumberCheck #94
+  \barNumberCheck #95
 
-  s1*13
+  s1*12
 
   s4
 
@@ -46,7 +46,7 @@ opening = {
   \clef "bass"
 
   \set Staff.instrumentName = "bass"
-  \set Score.currentBarNumber = #94
+  \set Score.currentBarNumber = #95
 
   \time 4/4
   

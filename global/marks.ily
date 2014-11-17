@@ -53,9 +53,9 @@ marks = {
 
   % VI ------------------------
   s4 s4 s4 |
-  \barNumberCheck #94
+  \barNumberCheck #95
   \mark \default
-  s1*13
+  s1*12
   s4 s4 s4
 
   % VII ------------------------
