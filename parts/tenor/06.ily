@@ -39,7 +39,16 @@ VI = \relative c' {
 
 LyricsVI = \lyricmode {
   
-  % Lyrics here
+  ¡San -- ta Vir -- gen de Lo -- re -- to,
+  sant Gi -- nés!
+  ¡Que me aho -- go, san -- to Dios!
+  ¡Que me aho -- go! ¡Que me aho -- go!
+  ¡Sant El -- mo, san -- to ben -- di -- to!
+  ¡Oh, vir -- gen de Gua -- da -- lu -- pe,
+  nues -- tra mal -- dad
+  ¡Se -- ño -- ra de Mon -- se -- rra -- te,
+  Se -- ño -- ra de Mon -- se -- rra -- te,
+  oý, se -- ño -- ra_y gran res -- ca -- te!
 
 }
 
