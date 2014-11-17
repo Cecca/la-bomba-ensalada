@@ -23,13 +23,13 @@
    - [ ] XXI
    - [ ] XXII
 
-** Alto [5/22] [22%]
+** Alto [6/22] [27%]
    - [X] I
    - [X] II
    - [X] II
    - [X] IV
    - [X] V
-   - [ ] VI
+   - [X] VI
    - [ ] VII
    - [ ] VII
    - [ ] IX
