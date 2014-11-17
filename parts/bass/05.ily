@@ -37,11 +37,11 @@ V = \relative c' {
   r2. |
   r2. |
   r4 r4 bes,4 |
-  bes4. bes8 bes4 |
-  ees4 f2 |
+  bes4. bes8 bes'4 |
+  ees,4 f2 |
   
   \time 4/4
-  bes4
+  bes,4
 
 }
 
@@ -61,7 +61,7 @@ opening = {
   \set Score.currentBarNumber = #76
 
   \time 4/4
-  
+  \tempo 4 = 132
 
 }
 
