@@ -17,19 +17,22 @@
 % Check the reference pitch
 VI = \relative c' {
 
-  s4 s4 s4 
+  r4 r2 |
 
   \barNumberCheck #95
-
-  s1*12
-
-  s4
-
-  s4
-
-  s4
-
-  
+  r4 bes'8 c d d ees c |
+  d4 r r2 |
+  r8 a16 a bes8 f r a16 a bes8 f |
+  r8 d' d4 d4. bes8 |
+  c8 d ees4 d2 |
+  r1 |
+  r8 bes bes c d4 ees8 d ~ |
+  d bes c4 d2 |
+  r2 r8 bes8 bes bes16 bes |
+  bes8 bes c4 g2 |
+  r4 g2 g4 |
+  g g a bes |
+  bes( a) bes
 
 }
 
@@ -46,10 +49,10 @@ opening = {
   \clef "treble"
 
   \set Staff.instrumentName = "soprano"
-  \set Score.currentBarNumber = #95
+  \set Score.currentBarNumber = #94
 
   \time 4/4
-  
+  r4
 
 }
 
