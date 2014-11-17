@@ -50,7 +50,7 @@ LyricsV = \lyricmode {
   Vir -- gen ma -- dre, yo pro -- me -- to
   Re -- zar con ti -- no tus ho -- ras.
   
-  Yo, tris -- te, yo, tris -- te, ofrez -- co tam -- bién,
+  Yo, tris -- te, yo, tris -- te,_o -- frez -- co tam -- bién,
   en sa -- lien -- do des -- te la -- go,
   ir des -- cal -- ço a San -- ti -- a -- go,
   eu yen -- do_a Je -- ru -- sa -- lén.
