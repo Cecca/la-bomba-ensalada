@@ -48,14 +48,17 @@ marks = {
   % V ------------------------  
   \barNumberCheck #76
   \mark \default
-  s1*17
+  s1*12
+  \time 3/4
+  s2.*6
+  \time 4/4
   s4
 
   % VI ------------------------
   s4 s4 s4 |
-  \barNumberCheck #94
+  \barNumberCheck #95
   \mark \default
-  s1*13
+  s1*12
   s4 s4 s4
 
   % VII ------------------------

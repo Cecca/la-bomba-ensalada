@@ -19,8 +19,10 @@ V = \relative c' {
 
   \barNumberCheck #76
 
-  s1*17
-
+  s1*12
+  \time 3/4
+  s2.*6
+  \time 4/4
   s4
 
   
