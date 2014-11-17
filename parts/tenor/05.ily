@@ -19,17 +19,42 @@ V = \relative c' {
 
   \barNumberCheck #76
 
-  s1*12
+  a4 a8 bes4 a8 bes a |
+  bes4 a g bes ~ |
+  bes8 a g( f) ees d d'4( ~ |
+  d c) d2 |
+  r1 |
+  r1 |
+  r2 r4 bes |
+  c d8 f f4 f8 f |
+  f8 f f4 r8 d4 d8 |
+  ees4 ees8 d4 c8 bes4 |
+  c4 r8 d4 d8 d4 |
+  d8 d d d ees2 |
+  
   \time 3/4
-  s2.*6
+  
+  d2 r4 |
+  r2. |
+  r2. |
+  r4 r4 bes4 |
+  bes4. c8 bes4 |
+  ees4 c2 |
+  
   \time 4/4
-  s4  
+  bes4
 
 }
 
 LyricsV = \lyricmode {
   
-  % Lyrics here
+  Vir -- gen ma -- dre, yo pro -- me -- to
+  Re -- zar con ti -- no tus ho -- ras.
+  
+  Yo, tris -- te, yo, tris -- te,_o -- frez -- co tam -- bién,
+  en sa -- lien -- do des -- te la -- go,
+  ir des -- cal -- ço a San -- ti -- a -- go,
+  eu yen -- do a_Je -- ru -- sa -- lén.
 
 }
 
@@ -43,7 +68,7 @@ opening = {
   \set Score.currentBarNumber = #76
 
   \time 4/4
-  
+  \tempo 4 = 132
 
 }
 
