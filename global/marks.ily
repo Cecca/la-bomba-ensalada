@@ -56,6 +56,7 @@ marks = {
   s4
 
   % VI ------------------------
+  \tempo 4 = 100
   s4 s4 s4 |
   \barNumberCheck #95
   \mark \default
