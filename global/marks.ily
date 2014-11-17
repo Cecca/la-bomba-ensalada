@@ -47,6 +47,7 @@ marks = {
 
   % V ------------------------  
   \barNumberCheck #76
+  \tempo 4 = 132
   \mark \default
   s1*12
   \time 3/4
