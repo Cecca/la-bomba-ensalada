@@ -48,7 +48,13 @@ V = \relative c' {
 
 LyricsV = \lyricmode {
   
-  % Lyrics here
+  Vir -- gen ma -- dre, yo pro -- me -- to
+  Re -- zar con ti -- no tus ho -- ras.
+  
+  Yo, tris -- te, yo, tris -- te,_o -- frez -- co tam -- bién,
+  en sa -- lien -- do des -- te la -- go,
+  ir des -- cal -- ço a San -- ti -- a -- go,
+  eu yen -- do a_Je -- ru -- sa -- lén.
 
 }
 
