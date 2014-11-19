@@ -71,14 +71,14 @@
    - [ ] XXI
    - [ ] XXII
 
-** Bass [6/22] [27%]
+** Bass [7/22] [31%]
    - [X] I
    - [X] II
    - [X] II
    - [X] IV
    - [X] V
    - [X] VI
-   - [ ] VII
+   - [X] VII
    - [ ] VII
    - [ ] IX
    - [ ] X

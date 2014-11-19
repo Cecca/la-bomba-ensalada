@@ -33,7 +33,7 @@ VI = \relative c' {
   g8 g aes4 ees2 |
   r4 ees2 ees4 |
   ees ees f g |
-  f2 bes,
+  f2 bes,4
 
 }
 
