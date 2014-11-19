@@ -41,8 +41,8 @@ VII = \relative c' {
 
 LyricsVII = \lyricmode {
   
-  % Lyrics here
-
+  
+  
 }
 
 opening = {
