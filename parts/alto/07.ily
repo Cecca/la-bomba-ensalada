@@ -21,7 +21,7 @@ VII = \relative c' {
 
   \barNumberCheck #108
 
-  s1*9
+  s1*10
 
   \time 2/4
 
@@ -29,7 +29,7 @@ VII = \relative c' {
 
   \time 3/4
 
-  s2.*2
+  s2.
 
   s4
 

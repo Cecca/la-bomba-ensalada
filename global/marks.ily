@@ -67,11 +67,11 @@ marks = {
   s4 |
   \barNumberCheck #108
   \mark \default
-  s1*9
+  s1*10
   \time 2/4
   s2*1
   \time 3/4
-  s2.*2
+  s2.
   s4 s4
   
   % VIII ---------------------------

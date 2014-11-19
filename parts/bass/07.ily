@@ -39,7 +39,7 @@ VII = \relative c' {
   \time 3/4
 
   bes4 f2 |
-  bes,2 r4
+  bes,2
 
 }
 
