@@ -45,7 +45,13 @@ VII = \relative c' {
 
 LyricsVII = \lyricmode {
   
-  % Lyrics here
+  ¡Oh gran so -- cor -- ro_y bo -- nan -- ça!
+  ¡Na -- ve vie -- ne! ¡Na -- ve vie -- ne! en que_es -- ca -- pe -- mos!
+  ¡A -- lle -- gad, a -- lle -- gad que pe -- re -- çe -- mos!
+  ¡So -- cor -- red, no_a -- ya tar -- dan -- ça So -- cor -- red So -- cor -- red!
+  ¡No se -- a un pun -- to de -- te -- ni -- do,
+  se -- ño -- res, es -- se ba -- tel es -- se ba -- tel es -- se ba -- tel!
+  ¡es -- se ba -- tel!
 
 }
 
