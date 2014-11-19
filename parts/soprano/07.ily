@@ -27,7 +27,7 @@ VII = \relative c' {
   a2 r8 a16 a bes8 a16 a |
   bes8 bes bes2 a4 |
   bes2 a4 r8 bes16 bes |
-  a8 d c bes a bes bes c |
+  a8 d c bes a bes bes[ c] |
   a4 bes8 c a4 r8 a |
   g fis r a g fis r a16 a |
   g8 fis r f!8 f f16 f f f f f |
