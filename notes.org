@@ -1,12 +1,12 @@
 * Progress
-** Soprano [6/22] [27%]
+** Soprano [7/22] [31%]
    - [X] I
    - [X] II
    - [X] II
    - [X] IV
    - [X] V
    - [X] VI
-   - [ ] VII
+   - [X] VII
    - [ ] VII
    - [ ] IX
    - [ ] X
@@ -23,14 +23,14 @@
    - [ ] XXI
    - [ ] XXII
 
-** Alto [6/22] [27%]
+** Alto [7/22] [31%]
    - [X] I
    - [X] II
    - [X] II
    - [X] IV
    - [X] V
    - [X] VI
-   - [ ] VII
+   - [X] VII
    - [ ] VII
    - [ ] IX
    - [ ] X
@@ -47,14 +47,14 @@
    - [ ] XXI
    - [ ] XXII
 
-** Tenor [6/22] [27%]
+** Tenor [7/22] [31%]
    - [X] I
    - [X] II
    - [X] II
    - [X] IV
    - [X] V
    - [X] VI
-   - [ ] VII
+   - [X] VII
    - [ ] VII
    - [ ] IX
    - [ ] X

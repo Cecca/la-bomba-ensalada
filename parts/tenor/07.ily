@@ -38,7 +38,7 @@ VII = \relative c' {
 
   \time 3/4
 
-  ees4 ees2 |
+  ees4 ees2 | %% TODO: Check ees2
   bes2
 
 }
