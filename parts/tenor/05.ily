@@ -13,6 +13,7 @@
 
 % Needs to be in the compile path
 \include "makescore/compile-segment.ily"
+\include "makescore/colorize.ily"
 
 % Check the reference pitch
 V = \relative c' {
@@ -26,8 +27,12 @@ V = \relative c' {
   r1 |
   r1 |
   r2 r4 bes |
-  c d8 f f4 f8 f |
-  f8 f f4 r8 d4 d8 |
+  c d8 
+  \switchedMusic {
+  d8 c4 a8 d8 |
+  d c d4
+  }  
+  r8 d4 d8 |
   ees4 ees8 d4 c8 bes4 |
   c4 r8 d4 d8 d4 |
   d8 d d d ees2 |

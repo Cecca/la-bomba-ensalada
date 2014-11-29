@@ -33,10 +33,14 @@ I = \relative c' {
   d4 d d d |
   bes2 } g'4. g8 |
 % ^^^
-  g4 d d bes |
-  c( f,) g2 |
-  a r4 d8 d |
+  g4 d d 
+  \switchedMusic {
+  ees |
+  f4 d2( c4) |
+  d2 
+  }
   
+  r4 d8 d |
   d4 d d d |
   bes1 |
   d4. d8 ees4 f |
