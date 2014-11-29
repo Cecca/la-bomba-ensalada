@@ -17,13 +17,24 @@
 % Check the reference pitch
 VIII = \relative c' {
 
-  s4 
+  r4 
 
   \barNumberCheck #121
 
-  s2.*16
+  r2. r2. r2. r2. r2. r2. r2. r2. r2. r2. r2. 
 
-  \repeat volta 2 { s2.*4 } 
+  r2 bes4 |
+  g2 c4 |
+  bes2 f4 |
+  g4 f2 |
+  bes,2 bes4 |
+
+  \repeat volta 2 { 
+    g'2 c4 |
+    bes2 f4 |
+    g4 f2 |
+    bes,2. |
+  } 
 
   
 
@@ -31,7 +42,8 @@ VIII = \relative c' {
 
 LyricsVIII = \lyricmode {
   
-  % Lyrics here
+  ¡Oh, qué ven -- tu -- ra he te -- ni -- do,
+  pues que pu -- de_en -- trar en él!
 
 }
 
@@ -45,7 +57,7 @@ opening = {
   \set Score.currentBarNumber = #121
 
   \time 3/4
-  
+  \partial 4
 
 }
 

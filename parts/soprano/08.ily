@@ -49,7 +49,11 @@ VIII = \relative c' {
 
 LyricsVIII = \lyricmode {
   
-  % Lyrics here
+  ¡Oh, qué ven -- tu -- ra he te -- ni -- do,
+  pues que pu -- de_en -- trar en él!
+  ¡Oh, qué ven -- tu -- ra he te -- ni -- do,
+  pues que pu -- de_en -- trar en él!
+  pues que pu -- de_en -- trar en él!
 
 }
 
