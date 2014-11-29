@@ -55,8 +55,10 @@ colorMusic =
 %% Marks with a blue color a piece of music that has been switched between two
 %% parts, for instance between tenor and alto.
 switchedMusic =
-#(define-music-function (parser location music)
-   (ly:music?)
-   #{
-     \colorMusic #blue $music
-   #})
+#(if (not (defined? 'noHighlight))
+     (define-music-function (parser location music)
+        (ly:music?)
+        #{ \colorMusic #blue $music #})
+     (define-music-function (parser location music)
+       (ly:music?)
+       #{ $music #}))
