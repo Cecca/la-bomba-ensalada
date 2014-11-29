@@ -17,15 +17,33 @@
 % Check the reference pitch
 VIII = \relative c' {
 
-  s4 
+  f4 
 
   \barNumberCheck #121
 
-  s2.*16
+  bes2 c4 |
+  d2 bes4 |
+  c2 d4 |
+  ees2 d4 |
+  bes2 c4 |
+  d2 c4 |
+  bes2 a4 |
+  bes2 f4 |
+  bes2 c4 |
+  d2 bes4 |
+  c2 d4 |
+  ees2 d4 |
+  bes2 c4 |
+  d2 c4 |
+  bes2 a4 |
+  bes2.
 
-  \repeat volta 2 { s2.*4 } 
-
-  
+  \repeat volta 2 {
+    bes2 c4 |
+    d2 c4 |
+    bes2 a4 |
+    bes2. |
+  } 
 
 }
 
@@ -44,8 +62,9 @@ opening = {
   \set Staff.instrumentName = "soprano"
   \set Score.currentBarNumber = #121
 
+  \tempo 4 = 160
   \time 3/4
-  
+  \partial 4
 
 }
 
