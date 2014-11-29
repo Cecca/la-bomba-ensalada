@@ -13,6 +13,7 @@
 
 % Needs to be in the compile path
 \include "makescore/compile-segment.ily"
+\include "makescore/colorize.ily"
 
 % Check the reference pitch
 I = \relative c' {
@@ -27,9 +28,9 @@ I = \relative c' {
   
 % Some editions have this part and the alto switched
 %       vv ->
-  a2 r4 a8 a |
+  a2 r4 \switchedMusic { a8 a |
   a4 a a a |
-  g2 ees'4. ees8 |
+  g2 } ees'4. ees8 |
 % ^^
   
   d4 g, d' ees |
