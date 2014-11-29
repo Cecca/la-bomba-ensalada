@@ -13,6 +13,7 @@
 
 % Needs to be in the compile path
 \include "makescore/compile-segment.ily"
+\include "makescore/colorize.ily"
 
 % Check the reference pitch
 V = \relative c' {
@@ -26,8 +27,14 @@ V = \relative c' {
   d d8 f4 f8 c d |
   ees4 d r8 d4 d8 |
   f8 f c d ees4 d |
-  r4 r8 d8 c4 a8 d8 |
-  d c d4 r8 f4 f8 |
+  r4 r8 
+  
+  \switchedMusic {
+  f f4 f8 f |
+  f8 f f4
+  }
+  
+  r8 f4 f8 |
   g4 g8 f4 f8 e!4 |
   f4 r8 f4 f8 f4 |
   f8 f f f g2 |
@@ -68,7 +75,7 @@ opening = {
   \set Score.currentBarNumber = #76
 
   \time 4/4
-  
+  \tempo 4=132
 
 }
 
