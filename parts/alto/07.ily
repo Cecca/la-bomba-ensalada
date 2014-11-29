@@ -56,7 +56,6 @@ LyricsVII = \lyricmode {
   ¡So -- cor -- red so -- cor -- red, no_a -- ya tar -- dan -- ça So -- cor -- red So -- cor -- red!
   ¡No se -- a un pun -- to de -- te -- ni -- do,
   se -- ño -- res, es -- se ba -- tel es -- se ba -- tel es -- se ba -- tel!
-  ¡es -- se ba -- tel!
   
 }
 

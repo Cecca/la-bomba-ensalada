@@ -75,7 +75,7 @@ marks = {
   s4 s4
   
   % VIII ---------------------------
-  \tempo 4=160
+  \tempo 4=172
   s4 |
   \barNumberCheck #121
   \mark \default
