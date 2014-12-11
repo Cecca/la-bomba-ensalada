@@ -1,5 +1,5 @@
 * Progress
-** Soprano [9/22] [40%]
+** Soprano [10/22] [45%]
    - [X] I
    - [X] II
    - [X] II
@@ -9,7 +9,7 @@
    - [X] VII
    - [X] VIII
    - [X] IX
-   - [ ] X
+   - [X] X
    - [ ] XI
    - [ ] XII
    - [ ] XIII
