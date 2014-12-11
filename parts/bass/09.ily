@@ -21,15 +21,22 @@ IX = \relative c' {
 
   \barNumberCheck #141
 
-  s1*10
-
-  
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  c,1 | 
+  g'2 aes |
+  g g |
+  c,1 |
 
 }
 
 LyricsIX = \lyricmode {
   
-  % Lyrics here
+  Dig -- num et jus -- tum est
 
 }
 
