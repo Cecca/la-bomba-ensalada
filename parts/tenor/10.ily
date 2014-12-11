@@ -19,19 +19,31 @@ X = \relative c' {
 
   \barNumberCheck #151
 
-  s1*16
-
-  s4
-
-  s4
-
-  
+  r4 c2 c4 |
+  bes2. bes4 |
+  c ees ees( d) |
+  ees2 r4 bes4 ~ |
+  bes bes bes2 ~ |
+  bes c |
+  d ees ~ |
+  ees4 d c( bes |
+  c2) bes~ |
+  bes1 ~ |
+  bes ~ |
+  bes2 r |
+  r4 bes2 bes4 |
+  bes2 g |
+  g2. f4 |
+  ees2 f ~ |
+  f
 
 }
 
 LyricsX = \lyricmode {
   
-  % Lyrics here
+  De tan gran -- de be -- ne -- fic -- io
+  re -- çe -- bi -- do en es -- te di -- a.
+  to -- dos hoy por su ser -- vi -- cio.
 
 }
 
