@@ -85,6 +85,7 @@ marks = {
   }
   
   % IX ------------------------ 
+  \tempo 4=138
   \time 4/4
   \barNumberCheck #141
   \mark \default
