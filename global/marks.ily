@@ -98,6 +98,7 @@ marks = {
   s4 s4
   
   % XI -------------------------
+  \tempo 4=120
   s4 s4 |
   \barNumberCheck #168
   \mark \default
