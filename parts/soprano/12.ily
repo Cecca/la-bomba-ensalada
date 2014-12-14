@@ -19,24 +19,45 @@ XII = \relative c' {
 
   \barNumberCheck #178
 
-  s1*11
+  r4 f8 g16 a bes2 |
+  r4 f8 g16 a bes2 |
+  r1 |
+  r4 r8 a bes4 a8 f |
+  g a bes4 r2 |
+  bes8 a16 g f8 g16 a bes2 |
+  r1 |
+  r2 r4 f |
+  g a bes r |
+  r2 r4 r8 a |
+  bes4 a bes8 bes16 bes bes8 bes ~ |
 
   \time 2/4
 
-  s2*1
+  bes bes bes a16 g |
 
   \time 3/4
 
-  s2.*3
-
-  
+  a2 bes4 |
+  bes a2 |
+  bes2. |
 
 }
 
 LyricsXII = \lyricmode {
   
-  % Lyrics here
-
+  Din di -- ghi din
+  din di -- ghi din
+  
+  ¡A -- ca -- ba, mal -- di -- to -- ya!
+  
+  Din di -- ghi din di -- ghi din
+  
+  din din din din din din 
+  din din di -- ghi din 
+  din din din 
+  di -- ghi din
+  
+  ¡Muy bien es -- tá!
 }
 
 opening = {
