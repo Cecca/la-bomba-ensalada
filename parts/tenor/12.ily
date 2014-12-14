@@ -19,23 +19,44 @@ XII = \relative c' {
 
   \barNumberCheck #178
 
-  s1*11
+  r1 |
+  r1 |
+  f2 ees8 d c d ~ |
+  d ees c4 bes r |
+  r2 f'16 ees f g f8 f ~ |
+  f d d d16 d d4 r8 bes |
+  c d bes4 r2 |
+  r4 bes c d |
+  ees f r2 |
+  r2 r4 r8 c |
+  d4 c d8 c16 d ees8 d ~ |
 
   \time 2/4
 
-  s2*1
+  d ees d c16 bes |
 
   \time 3/4
 
-  s2.*3
-
-  
+  c2 d4 |
+  ees c2 |
+  bes2. |
 
 }
 
 LyricsXII = \lyricmode {
   
-  % Lyrics here
+  ¡Oh,_có -- mo_es - tá des -- tem -- pla -- da!
+  
+  Di -- ghi -- di -- ghi din din 
+  din din di -- ghi din 
+  
+  ¡Es por de -- más!
+  
+  din din din din din
+  din din din di -- ghi di -- ghi din
+  din din di -- ghi din
+  
+  ¡Muy bien es -- tá!
 
 }
 
