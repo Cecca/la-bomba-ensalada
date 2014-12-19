@@ -57,7 +57,7 @@ LyricsXIII = \lyricmode {
   con -- cor -- des en a -- la -- bar
   a Je -- sús re -- zién na -- ci -- do
   a Je -- sús re -- zién na -- ci -- do
-  re -- zién na -- ci -- do
+  re -- zién na -- ci -- do.
 
 }
 
