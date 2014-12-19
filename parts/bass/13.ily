@@ -19,19 +19,45 @@ XIII = \relative c' {
 
   \barNumberCheck #193
 
-  s2.*24
+  bes2 f4 |
+  bes2 bes4 |
+  ees,2 ees4 |
+  bes'2 bes4 |
+  r2. |
+  bes,2 bes4 |
+  f'2 f4 |
+  g4 ees2 |
+  f2. |
+  r2. |
+  bes,2 f'4 |
+  bes,2 bes'4 |
+  ees,2 ees4 |
+  bes'2. |
+  r2. |
+  bes,2 bes4 |
+  f'2 f4 |
+  g4 ees2 |
+  f2 f4 |
+  bes4 c2 |
+  d4 bes a |
+  bes ees,( c) |
+  bes2 f'4 |
+  g4 f2 |
 
   \time 4/4
 
-  s1*1
-
-  
+  bes,2 bes |  
 
 }
 
 LyricsXIII = \lyricmode {
   
-  % Lyrics here
+  An -- de pues, nues -- tro ape -- lli -- do
+  el ta -- ñer con el can -- tar
+  con -- cor -- des en a -- la -- bar
+  a Je -- sús re -- zién na -- ci -- do
+  a Je -- sús re -- zién na -- ci -- do
+  re -- zién na -- ci -- do
 
 }
 
