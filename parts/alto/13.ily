@@ -19,19 +19,44 @@ XIII = \relative c' {
 
   \barNumberCheck #193
 
-  s2.*24
+  r2. |
+  r2. |
+  g'2 g4 |
+  f2 f4 |
+  g2 g4 |
+  f2 d4 |
+  r2. |
+  bes2 bes4|
+  f'2 f4 |
+  g4 ees2 |
+  f2. |
+  r2. |
+  g2 g4 |
+  f2 f4 |
+  g2 g4 |
+  f2. |
+  r2. |
+  bes,2 bes4 |
+  f'2 f4 |
+  g4 ees2 |
+  f2 f4 |
+  f4 ees2 |
+  d2 f4 |
+  d4 f2 |
 
   \time 4/4
 
-  s1*1
-
-  
+  f2 f |  
 
 }
 
 LyricsXIII = \lyricmode {
   
-  % Lyrics here
+  An -- de pues, nues -- tro ape -- lli -- do
+  el ta -- ñer con el can -- tar
+  con -- cor -- des en a -- la -- bar
+  a Je -- sús re -- zién na -- ci -- do
+  a Je -- sús re -- zién na -- ci -- do.
 
 }
 
@@ -45,7 +70,7 @@ opening = {
   \set Score.currentBarNumber = #193
 
   \time 3/4
-  
+  \tempo 4=150
 
 }
 

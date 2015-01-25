@@ -116,6 +116,7 @@ marks = {
   % XIII -------------------------
   \barNumberCheck #193
   \mark \default
+  \tempo 4=160
   s2.*24
   \time 4/4
   s1*1
