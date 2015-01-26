@@ -34,7 +34,7 @@ XIV = \relative c' {
   
   f4 f8 f bes4. bes8 |
   bes4 ees, bes' bes |
-  aes4. bes8( f g f4) |
+  aes4. bes8 f( g f4) |
   bes,4
 
 }
@@ -52,7 +52,7 @@ LyricsXIV = \lyricmode {
   Ben -- di -- to sea es -- te día
   que nas -- ció el con -- ten -- ta -- mien -- to.
   Re -- me -- dió su_ad -- ve -- ni -- mien -- to
-  mil eno -- jos.
+  mil e -- no -- jos.
 
 }
 
