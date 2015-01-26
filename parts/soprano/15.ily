@@ -17,21 +17,34 @@
 % Check the reference pitch
 XV = \relative c' {
 
-  s4 s4 s4 
+  r4 bes' c |
 
   \barNumberCheck #233
 
-  s1*8
-
-  s4
-
-  
+  d4. d8 d c16 d ees8 ees |
+  d4 c r2 |
+  d8 ees f d ees4 d |
+  bes2 bes4 d8 c16 d |
+  ees8 d c bes a4 a8 a ~ |
+  a a a g16 a bes4. bes8 |
+  bes8 bes16 bes bes8 bes bes4 bes |
+  c4. bes8 a bes4 a8 |
+  bes4
 
 }
 
 LyricsXV = \lyricmode {
   
-  % Lyrics here
+  Din din 
+  din din din din din din din 
+  din din
+  din din din din din din
+  din din din din din 
+  din din din din din din din 
+  din din din din din din din 
+  din din din din din din 
+  din din din din din 
+  din
 
 }
 
@@ -45,7 +58,7 @@ opening = {
   \set Score.currentBarNumber = #233
 
   \time 4/4
-  
+  \partial 2.
 
 }
 
