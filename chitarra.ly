@@ -12,6 +12,7 @@
   }
 }
 
+#(set-global-staff-size 18.5)
 
 \include "makescore/init-score.ily"
 
