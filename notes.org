@@ -1,5 +1,5 @@
 * Progress
-** Soprano [15/22] [68%]
+** Soprano [16/22] [72%]
    - [X] I
    - [X] II
    - [X] II
@@ -15,7 +15,7 @@
    - [X] XIII
    - [X] XIV
    - [X] XV
-   - [ ] XVI
+   - [X] XVI
    - [ ] XVII
    - [ ] XVIII
    - [ ] XIX
@@ -23,7 +23,7 @@
    - [ ] XXI
    - [ ] XXII
 
-** Alto [15/22] [68%]
+** Alto [16/22] [72%]
    - [X] I
    - [X] II
    - [X] II
@@ -39,7 +39,7 @@
    - [X] XIII
    - [X] XIV
    - [X] XV
-   - [ ] XVI
+   - [X] XVI
    - [ ] XVII
    - [ ] XVIII
    - [ ] XIX
@@ -47,7 +47,7 @@
    - [ ] XXI
    - [ ] XXII
 
-** Tenor [15/22] [68%]
+** Tenor [16/22] [72%]
    - [X] I
    - [X] II
    - [X] II
@@ -63,7 +63,7 @@
    - [X] XIII
    - [X] XIV
    - [X] XV
-   - [ ] XVI
+   - [X] XVI
    - [ ] XVII
    - [ ] XVIII
    - [ ] XIX
@@ -71,7 +71,7 @@
    - [ ] XXI
    - [ ] XXII
 
-** Bass [15/22] [68%]
+** Bass [16/22] [72%]
    - [X] I
    - [X] II
    - [X] II
@@ -87,7 +87,7 @@
    - [X] XIII
    - [X] XIV
    - [X] XV
-   - [ ] XVI
+   - [X] XVI
    - [ ] XVII
    - [ ] XVIII
    - [ ] XIX
