@@ -17,23 +17,33 @@
 % Check the reference pitch
 XVI = \relative c' {
 
-  s4 s4 s4 
+  r8 bes8 bes bes f f |
 
   \barNumberCheck #242
 
-  s1*8
-
-  s4
-
-  s4
-
-  
+  bes4 bes8 bes4 bes8 ees, ees |
+  bes'4 bes8 bes4 bes8 ees, ees |
+  bes'4 r8 bes,8 ees4 bes8 bes' ~ |
+  bes bes bes bes g4 g8 g ~ |
+  g g g4 f2 |
+  r4 f8 f bes4 bes8 bes |
+  bes4 ees, bes' bes |
+  aes4. bes8 f( g f4) |
+  bes2
 
 }
 
 LyricsXVI = \lyricmode {
   
-  % Lyrics here
+  Din din din din din 
+  din din din din din din 
+  din din din din din din
+  din din din din din
+  din din din din din din 
+  din din din
+  
+  Y ben -- di -- tos, que_an -- sí_am -- an -- sa -- ron
+  Tal for -- tu -- na.
 
 }
 
@@ -47,7 +57,7 @@ opening = {
   \set Score.currentBarNumber = #242
 
   \time 4/4
-  
+  \partial 2.
 
 }
 
