@@ -29,7 +29,7 @@ XVI = \relative c' {
   r4 f8 f bes4 bes8 bes |
   bes4 ees, bes' bes |
   aes4. bes8 f( g f4) |
-  bes2
+  bes,2
 
 }
 
