@@ -22,7 +22,7 @@ XV = \relative c' {
   \barNumberCheck #233
 
   d4. d8 d c16 d ees8 ees |
-  d4 c r2 |
+  d4 bes r2 |
   d8 ees f d ees4 d |
   bes2 bes4 d8 c16 d |
   ees8 d c bes a4 a8 a ~ |
