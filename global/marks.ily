@@ -124,6 +124,7 @@ marks = {
   % XIV ---------------------------  
   \barNumberCheck #218 
   \mark \default
+  \tempo 4=120
   s1*14 
   s4
   
