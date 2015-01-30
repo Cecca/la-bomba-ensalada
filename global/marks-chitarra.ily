@@ -20,6 +20,7 @@ marks = {
   
   % XII --------------------------
   \barNumberCheck #178
+  \tempo 4=112
   \mark \default
   s1*11
   \time 2/4
@@ -38,7 +39,7 @@ marks = {
   % XIV ---------------------------  
   \barNumberCheck #218 
   \mark \default
-  \tempo 4=120
+  \tempo 4=112
   s1*14 
   s4
   

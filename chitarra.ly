@@ -107,6 +107,27 @@ rehearsalMidi = #
     \midi { }
   }
 }
-  
 
+\book {
+  \bookOutputSuffix "alto"
+  \score {
+    \rehearsalMidi "alto"
+    \midi { }
+  }
+}
 
+\book {
+  \bookOutputSuffix "tenor"
+  \score {
+    \rehearsalMidi "tenor"
+    \midi { }
+  }
+}
+
+\book {
+  \bookOutputSuffix "bass"
+  \score {
+    \rehearsalMidi "bass"
+    \midi { }
+  }
+}
