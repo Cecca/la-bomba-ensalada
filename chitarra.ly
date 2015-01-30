@@ -75,4 +75,38 @@
   }
 }
 
+%%% MIDI control files
+
+rehearsalMidi = #
+(define-music-function
+ (parser location name) (string?)
+ #{
+   \unfoldRepeats <<
+     \new Staff = "soprano" <<
+       \new Voice = "soprano" { s1*0\f \soprano }
+       \new Voice = "marks" { s1*0\f \marks }
+     >>
+     \new Staff = "alto" \new Voice = "alto" { s1*0\f \alto }
+     \new Staff = "tenor" \new Voice = "tenor" { s1*0\f \tenor }
+     \new Staff = "bass" \new Voice = "bass" { s1*0\f \bass }
+     \context Staff = $name {
+       \set Score.midiMinimumVolume = #0.4
+       \set Score.midiMaximumVolume = #0.4
+       \set Staff.midiMinimumVolume = #0.8
+       \set Staff.midiMaximumVolume = #1.0
+       \set Staff.midiInstrument = "acoustic grand"
+     }
+   >>
+ #})
+
+
+\book {
+  \bookOutputSuffix "soprano"
+  \score {
+    \rehearsalMidi "soprano"
+    \midi { }
+  }
+}
+  
+
 
