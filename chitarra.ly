@@ -12,7 +12,7 @@
   }
 }
 
-#(set-global-staff-size 18.5)
+#(set-global-staff-size 18)
 
 \include "makescore/init-score.ily"
 
@@ -74,3 +74,5 @@
     \tempo 4=170
   }
 }
+
+
