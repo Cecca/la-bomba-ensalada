@@ -15,7 +15,7 @@ marks = {
   \tempo 4=120
   s4 s4 |
   \barNumberCheck #168
-  \mark \default
+  \mark #10
   s1*10
   
   % XII --------------------------
