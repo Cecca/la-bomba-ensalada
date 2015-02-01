@@ -43,7 +43,7 @@ LyricsXVI = \lyricmode {
   din din din din din din 
   din din din din din
   
-  Y ben -- di -- tos, que_an -- sí_am -- an -- sa -- ron
+  Y ben -- di -- tos, que_an -- sí_a -- man -- sa -- ron
   Tal for -- tu -- na.
 
 }

@@ -49,8 +49,8 @@ LyricsXIV = \lyricmode {
   din din din din din
   din din din 
   
-  Ben -- di -- to sea es -- te día
-  que nas -- ció el con -- ten -- ta -- mien -- to.
+  Ben -- di -- to sea es -- te dí -- a
+  que nas -- ció_el con -- ten -- ta -- mien -- to.
   Re -- me -- dió su_ad -- ve -- ni -- mien -- to
   mil e -- no -- jos.
 

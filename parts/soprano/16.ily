@@ -40,7 +40,7 @@ LyricsXVI = \lyricmode {
   Que con pie -- dad nos mi -- ra -- ron
   nos mi -- ra -- ron
   
-  Y ben -- di -- tos, que_an -- sí_am -- an -- sa -- ron
+  Y ben -- di -- tos, que_an -- sí_a -- man -- sa -- ron
   Tal for -- tu -- na.
 
 }
