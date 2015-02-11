@@ -2,6 +2,7 @@
 
 \header {
   title = "La Bomba"
+  subtitle = "La guitarra"
   composer = "Mateo Flecha"
   tagline = \markup {
     Engraved at
@@ -12,6 +13,9 @@
     \line { OpenLilyLib (http://openlilylib.org) }
   }
 }
+
+#(set-global-staff-size 18)
+
 
 % Needed till the transition is complete to prevent 
 % partial compilation of segments still to transfer
@@ -34,7 +38,7 @@
 
 \gridDisplay
 
-segments = #'all
+segments = #'(11 . 16)
 
 \score {
   
