@@ -17,8 +17,37 @@
 \include "../../global/global.ily"
 
 % Check the reference pitch
-\gridPutMusic "" #
+\gridPutMusic "basso" #14
 \with {
+
+  lyrics = \lyricmode {
+    
+    Din din
+    din din din din din din 
+    din din din din din din 
+    din din din din din 
+    din din din din din din 
+    din din din din din
+    din din din 
+    
+    Ben -- di -- to sea es -- te dí -- a
+    que nas -- ció_el con -- ten -- ta -- mien -- to.
+    Re -- me -- dió su_ad -- ve -- ni -- mien -- to
+    mil e -- no -- jos.
+
+  }
+
+  opening = {
+
+    \key bes \major
+
+    \clef "bass"
+
+    \set Staff.instrumentName = "bass"
+    \set Score.currentBarNumber = #218
+
+    \time 4/4
+  }
 
 }
 \relative c' {
@@ -45,50 +74,4 @@
 
 }
 
-lyrics = \lyricmode {
-  
-  Din din
-  din din din din din din 
-  din din din din din din 
-  din din din din din 
-  din din din din din din 
-  din din din din din
-  din din din 
-  
-  Ben -- di -- to sea es -- te dí -- a
-  que nas -- ció_el con -- ten -- ta -- mien -- to.
-  Re -- me -- dió su_ad -- ve -- ni -- mien -- to
-  mil e -- no -- jos.
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "bass"
-
-  \set Staff.instrumentName = "bass"
-  \set Score.currentBarNumber = #218
-
-  \time 4/4
-  
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \XIV
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsXIV
-    }
-  >>
-  \closing
-}
+\gridTest "basso" #14

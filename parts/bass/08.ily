@@ -17,8 +17,29 @@
 \include "../../global/global.ily"
 
 % Check the reference pitch
-\gridPutMusic "" #
+\gridPutMusic "basso" #8
 \with {
+
+  lyrics = \lyricmode {
+    
+    ¡Oh, qué ven -- tu -- ra he te -- ni -- do,
+    pues que pu -- de_en -- trar en él!
+
+  }
+
+  opening = {
+
+    \key bes \major
+
+    \clef "bass"
+
+    \set Staff.instrumentName = "bass"
+    \set Score.currentBarNumber = #121
+
+    \time 3/4
+    \partial 4
+
+  }
 
 }
 \relative c' {
@@ -46,40 +67,4 @@
 
 }
 
-lyrics = \lyricmode {
-  
-  ¡Oh, qué ven -- tu -- ra he te -- ni -- do,
-  pues que pu -- de_en -- trar en él!
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "bass"
-
-  \set Staff.instrumentName = "bass"
-  \set Score.currentBarNumber = #121
-
-  \time 3/4
-  \partial 4
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \VIII
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsVIII
-    }
-  >>
-  \closing
-}
+\gridTest "basso" #8
