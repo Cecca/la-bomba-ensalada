@@ -17,9 +17,33 @@
 \include "../../global/global.ily"
 
 % Check the reference pitch
-\gridPutMusic "" #
+\gridPutMusic "soprano" #5
 \with {
-
+  lyrics = \lyricmode {
+    
+    Vir -- gen ma -- dre, yo pro -- me -- to
+    Re -- zar con ti -- no tus ho -- ras.
+    Si, Juan,_tu es -- ca -- pas, hier -- mo mo -- ras.
+    Mon -- se -- rra -- te lue -- go me -- to.
+    
+    eu yen -- do_a Je -- ru -- sa -- lén
+    eu yen -- do_a Je -- ru -- sa -- lén.
+    
+  }
+  
+  opening = {
+  
+    \key bes \major
+  
+    \clef "treble"
+  
+    \set Staff.instrumentName = "soprano"
+    \set Score.currentBarNumber = #76
+  
+    \time 4/4
+    \tempo 4 = 132
+  
+  }
 }
 \relative c' {
 
@@ -52,45 +76,4 @@
 
 }
 
-lyrics = \lyricmode {
-  
-  Vir -- gen ma -- dre, yo pro -- me -- to
-  Re -- zar con ti -- no tus ho -- ras.
-  Si, Juan,_tu es -- ca -- pas, hier -- mo mo -- ras.
-  Mon -- se -- rra -- te lue -- go me -- to.
-  
-  eu yen -- do_a Je -- ru -- sa -- lén
-  eu yen -- do_a Je -- ru -- sa -- lén.
-  
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble"
-
-  \set Staff.instrumentName = "soprano"
-  \set Score.currentBarNumber = #76
-
-  \time 4/4
-  \tempo 4 = 132
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \V
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsV
-    }
-  >>
-  \closing
-}
+\gridTest "soprano" #5

@@ -18,9 +18,32 @@
 \include "makescore/colorize.ily"
 
 % Check the reference pitch
-\gridPutMusic "" #
+\gridPutMusic "tenore" #5
 \with {
-
+  lyrics = \lyricmode {
+    
+    Vir -- gen ma -- dre, yo pro -- me -- to
+    Re -- zar con ti -- no tus ho -- ras.
+    
+    Yo, tris -- te, yo, tris -- te,_o -- frez -- co tam -- bién,
+    en sa -- lien -- do des -- te la -- go,
+    ir des -- cal -- ço a San -- ti -- a -- go,
+    eu yen -- do a_Je -- ru -- sa -- lén.
+  
+  }
+  
+  opening = {
+  
+    \key bes \major
+  
+    \clef "treble_8"
+  
+    \set Staff.instrumentName = "tenor"
+    \set Score.currentBarNumber = #76
+  
+    \time 4/4
+    \tempo 4 = 132
+  }
 }
 \relative c' {
 
@@ -57,45 +80,4 @@
 
 }
 
-lyrics = \lyricmode {
-  
-  Vir -- gen ma -- dre, yo pro -- me -- to
-  Re -- zar con ti -- no tus ho -- ras.
-  
-  Yo, tris -- te, yo, tris -- te,_o -- frez -- co tam -- bién,
-  en sa -- lien -- do des -- te la -- go,
-  ir des -- cal -- ço a San -- ti -- a -- go,
-  eu yen -- do a_Je -- ru -- sa -- lén.
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble_8"
-
-  \set Staff.instrumentName = "tenor"
-  \set Score.currentBarNumber = #76
-
-  \time 4/4
-  \tempo 4 = 132
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \V
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsV
-    }
-  >>
-  \closing
-}
+\gridTest "tenore" #5
