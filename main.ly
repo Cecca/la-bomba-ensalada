@@ -13,10 +13,6 @@
   }
 }
 
-% Needed till the transition is complete to prevent 
-% partial compilation of segments still to transfer
-\include "makescore/init-score.ily"
-
 % Initialize the structure
 \include "global/global.ily"
 

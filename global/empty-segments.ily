@@ -1,6 +1,10 @@
 \version "2.18.2"
 
 %{
+  **ATTENTION**: since the transition to Gridly, this file is no longer 
+  needed. It is now kept only for illustrative purposes, until the `clojure`
+  folder gets removed.
+
   This file represents sort of a 'skeleton' for the score. It defines the
   segments, filled with spacer rests.
 %}
