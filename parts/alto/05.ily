@@ -12,13 +12,41 @@
 %}
 
 
-\#(ly:set-option 'relative-includes #t)
+#(ly:set-option 'relative-includes #t)
 
 \include "../../global/global.ily"
 \include "makescore/colorize.ily"
 
 % Check the reference pitch
-V = \relative c' {
+\gridPutMusic "alto" #5
+\with {
+  lyrics = \lyricmode {
+    
+    
+    Si, Juan, tu_es -- ca -- pas, hier -- mo mo -- ras.
+    Mon -- se -- rra -- te lue -- go me -- to.
+    Yo, tris -- te,_o -- frez -- co tam -- bién,
+    en sa -- lien -- do des -- te la -- go,
+    ir des -- cal -- ço a San -- ti -- a -- go,
+    eu yen -- do_a Je -- ru -- sa -- lén,
+    eu yen -- do_a Je -- ru -- sa -- lén.
+  
+  }
+  
+  opening = {
+  
+    \key bes \major
+  
+    \clef "treble"
+  
+    \set Staff.instrumentName = "alto"
+    \set Score.currentBarNumber = #76
+  
+    \time 4/4
+    \tempo 4=132
+  }
+}
+\relative c' {
 
   \barNumberCheck #76
 
@@ -54,46 +82,4 @@ V = \relative c' {
 
 }
 
-LyricsV = \lyricmode {
-  
-  
-  Si, Juan, tu_es -- ca -- pas, hier -- mo mo -- ras.
-  Mon -- se -- rra -- te lue -- go me -- to.
-  Yo, tris -- te,_o -- frez -- co tam -- bién,
-  en sa -- lien -- do des -- te la -- go,
-  ir des -- cal -- ço a San -- ti -- a -- go,
-  eu yen -- do_a Je -- ru -- sa -- lén,
-  eu yen -- do_a Je -- ru -- sa -- lén.
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble"
-
-  \set Staff.instrumentName = "alto"
-  \set Score.currentBarNumber = #76
-
-  \time 4/4
-  \tempo 4=132
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \V
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsV
-    }
-  >>
-  \closing
-}
+\gridTest "alto" #5

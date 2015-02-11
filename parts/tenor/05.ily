@@ -12,13 +12,17 @@
 %}
 
 
-\#(ly:set-option 'relative-includes #t)
+#(ly:set-option 'relative-includes #t)
 
 \include "../../global/global.ily"
 \include "makescore/colorize.ily"
 
 % Check the reference pitch
-V = \relative c' {
+\gridPutMusic "" #
+\with {
+
+}
+\relative c' {
 
   \barNumberCheck #76
 

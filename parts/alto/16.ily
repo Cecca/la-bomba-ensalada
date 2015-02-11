@@ -12,12 +12,16 @@
 %}
 
 
-\#(ly:set-option 'relative-includes #t)
+#(ly:set-option 'relative-includes #t)
 
 \include "../../global/global.ily"
 
 % Check the reference pitch
-XVI = \relative c' {
+\gridPutMusic "" #
+\with {
+
+}
+\relative c' {
 
   r8 f f f16 f f8 f |
 

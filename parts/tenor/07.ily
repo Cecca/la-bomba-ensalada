@@ -12,13 +12,17 @@
 %}
 
 
-\#(ly:set-option 'relative-includes #t)
+#(ly:set-option 'relative-includes #t)
 
 \include "../../global/global.ily"
 \include "makescore/colorize.ily"
 
 % Check the reference pitch
-VII = \relative c' {
+\gridPutMusic "" #
+\with {
+
+}
+\relative c' {
 
   r8 d |
 
