@@ -17,8 +17,29 @@
 \include "../../global/global.ily"
 
 % Check the reference pitch
-\gridPutMusic "" #
+\gridPutMusic "tenore" #10
 \with {
+
+  lyrics = \lyricmode {
+    
+    De tan gran -- de be -- ne -- fic -- io
+    re -- çe -- bi -- do en es -- te di -- a.
+    to -- dos hoy por su ser -- vi -- cio.
+
+  }
+
+  opening = {
+
+    \key bes \major
+
+    \clef "treble_8"
+
+    \set Staff.instrumentName = "tenor"
+    \set Score.currentBarNumber = #151
+
+    \time 4/4
+    
+  }
 
 }
 \relative c' {
@@ -45,41 +66,4 @@
 
 }
 
-lyrics = \lyricmode {
-  
-  De tan gran -- de be -- ne -- fic -- io
-  re -- çe -- bi -- do en es -- te di -- a.
-  to -- dos hoy por su ser -- vi -- cio.
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble_8"
-
-  \set Staff.instrumentName = "tenor"
-  \set Score.currentBarNumber = #151
-
-  \time 4/4
-  
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \X
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsX
-    }
-  >>
-  \closing
-}
+\gridTest "tenore" #10

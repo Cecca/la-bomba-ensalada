@@ -17,8 +17,37 @@
 \include "../../global/global.ily"
 
 % Check the reference pitch
-\gridPutMusic "" #
+\gridPutMusic "tenore" #14
 \with {
+
+  lyrics = \lyricmode {
+    
+    Ben -- di -- to_el que ha ve -- ni -- do
+    A li -- brar -- nos de ago -- ní -- a
+    
+    Din din din din din din din din din din 
+    din din din din din 
+    din din din din din din 
+    din din din din din din din din 
+    din din 
+    
+    Re -- me -- dió su_ad -- ve -- ni -- mien -- to
+    mil e -- no -- jos.
+
+  }
+
+  opening = {
+
+    \key bes \major
+
+    \clef "treble_8"
+
+    \set Staff.instrumentName = "tenor"
+    \set Score.currentBarNumber = #218
+
+    \time 4/4
+    
+  }
 
 }
 \relative c' {
@@ -44,49 +73,4 @@
 
 }
 
-lyrics = \lyricmode {
-  
-  Ben -- di -- to_el que ha ve -- ni -- do
-  A li -- brar -- nos de ago -- ní -- a
-  
-  Din din din din din din din din din din 
-  din din din din din 
-  din din din din din din 
-  din din din din din din din din 
-  din din 
-  
-  Re -- me -- dió su_ad -- ve -- ni -- mien -- to
-  mil e -- no -- jos.
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble_8"
-
-  \set Staff.instrumentName = "tenor"
-  \set Score.currentBarNumber = #218
-
-  \time 4/4
-  
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \XIV
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsXIV
-    }
-  >>
-  \closing
-}
+\gridTest "tenore" #14
