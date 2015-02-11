@@ -11,11 +11,34 @@
    Segment   : IV
 %}
 
-% Needs to be in the compile path
-\include "makescore/compile-segment.ily"
+#(ly:set-option 'relative-includes #t)
 
-% Check the reference pitch
-IV = \relative c' {
+\include "../../global/global.ily"
+
+\gridPutMusic "soprano" #4
+\with {
+  lyrics = \lyricmode {
+    
+    Mas, tris -- te yo, ¿que ha -- ré?
+    Mas, tris -- te yo, ¿que ha -- ré?
+    Que yo, que no sé na -- dar, ¡mo -- ri -- ré!
+    Que yo, que no sé na -- dar, ¡mo -- ri -- ré!
+    ¡mo -- ri -- ré!
+  
+  }
+  
+  opening = {
+  
+    \key bes \major
+  
+    \clef "treble"
+  
+    \set Staff.instrumentName = "soprano"
+    \set Score.currentBarNumber = #59
+  
+  }
+}
+\relative c' {
 
   \time 3/4
 
@@ -46,42 +69,4 @@ IV = \relative c' {
 
 }
 
-LyricsIV = \lyricmode {
-  
-  Mas, tris -- te yo, ¿que ha -- ré?
-  Mas, tris -- te yo, ¿que ha -- ré?
-  Que yo, que no sé na -- dar, ¡mo -- ri -- ré!
-  Que yo, que no sé na -- dar, ¡mo -- ri -- ré!
-  ¡mo -- ri -- ré!
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble"
-
-  \set Staff.instrumentName = "soprano"
-  \set Score.currentBarNumber = #59
-
-  
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \IV
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsIV
-    }
-  >>
-  \closing
-}
+\gridTest "soprano" #4
