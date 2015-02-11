@@ -45,7 +45,7 @@
 
 }
 
-LyricsX = \lyricmode {
+lyrics = \lyricmode {
   
   De tan gran -- de be -- ne -- fic -- io
   re -- çe -- bi -- do en es -- te di -- a.

@@ -53,7 +53,7 @@
 
 }
 
-LyricsVIII = \lyricmode {
+lyrics = \lyricmode {
   
   ¡Oh, qué ven -- tu -- ra he te -- ni -- do,
   pues que pu -- de_en -- trar en él!

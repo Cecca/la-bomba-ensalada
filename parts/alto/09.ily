@@ -40,7 +40,7 @@
 
 }
 
-LyricsIX = \lyricmode {
+lyrics = \lyricmode {
   
   Dig -- num et jus -- tum est
 

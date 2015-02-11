@@ -56,7 +56,7 @@
 
 }
 
-LyricsXIII = \lyricmode {
+lyrics = \lyricmode {
   
   An -- de pues, nues -- tro ape -- lli -- do
   el ta -- ñer con el can -- tar

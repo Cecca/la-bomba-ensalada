@@ -40,7 +40,7 @@
 
 }
 
-LyricsIX = \lyricmode {
+lyrics = \lyricmode {
   
   Gra -- ti -- as a -- ga -- mus
   Do -- mi -- no De --o no -- stro

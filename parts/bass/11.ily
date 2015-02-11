@@ -41,7 +41,7 @@
 
 }
 
-LyricsXI = \lyricmode {
+lyrics = \lyricmode {
   
   ¡E -- a, e -- a, sus!
   Em -- pie -- ça tú, Gil Pi -- çar -- ra,

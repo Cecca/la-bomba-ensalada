@@ -44,7 +44,7 @@
 
 }
 
-LyricsXIV = \lyricmode {
+lyrics = \lyricmode {
   
   Din din
   din din din din din din 

@@ -35,7 +35,7 @@
 
 }
 
-LyricsXXII = \lyricmode {
+lyrics = \lyricmode {
   
   % Lyrics here
 

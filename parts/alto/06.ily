@@ -43,7 +43,7 @@
 
 }
 
-LyricsVI = \lyricmode {
+lyrics = \lyricmode {
   
   ¡sant Gi -- nés, so -- co -- rred -- nos!
   ¡Que me aho -- go, Que me aho -- go!

@@ -41,7 +41,7 @@
 
 }
 
-LyricsXI = \lyricmode {
+lyrics = \lyricmode {
   
   ¡E -- a, e -- a, sus, em -- pe -- ce -- mos!
   a ta -- ñer con tu gui -- ta -- rra

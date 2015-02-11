@@ -40,7 +40,7 @@
 
 }
 
-LyricsXVI = \lyricmode {
+lyrics = \lyricmode {
   
   Ben -- di -- tos se -- an los o -- jos
   Que con pie -- dad nos mi -- ra -- ron

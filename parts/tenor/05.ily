@@ -57,7 +57,7 @@
 
 }
 
-LyricsV = \lyricmode {
+lyrics = \lyricmode {
   
   Vir -- gen ma -- dre, yo pro -- me -- to
   Re -- zar con ti -- no tus ho -- ras.

@@ -44,7 +44,7 @@
   
 }
 
-LyricsXIV = \lyricmode {
+lyrics = \lyricmode {
   
   Ben -- di -- to_el que ha ve -- ni -- do
   A li -- brar -- nos de ago -- ní -- a

@@ -43,7 +43,7 @@
 
 }
 
-LyricsVI = \lyricmode {
+lyrics = \lyricmode {
   
   ¡San -- ta Vir -- gen de Lo -- re -- to,
   sant Gi -- nés!

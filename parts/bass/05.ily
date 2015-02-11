@@ -17,9 +17,32 @@
 \include "../../global/global.ily"
 
 % Check the reference pitch
-\gridPutMusic "" #
+\gridPutMusic "basso" #5
 \with {
-
+  lyrics = \lyricmode {
+    
+    Vir -- gen ma -- dre, yo pro -- me -- to
+    Re -- zar con ti -- no tus ho -- ras.
+    
+    Yo, tris -- te, yo, tris -- te,_o -- frez -- co tam -- bién,
+    en sa -- lien -- do des -- te la -- go,
+    ir des -- cal -- ço a San -- ti -- a -- go,
+    eu yen -- do_a Je -- ru -- sa -- lén.
+  
+  }
+  
+  opening = {
+  
+    \key bes \major
+  
+    \clef "bass"
+  
+    \set Staff.instrumentName = "bass"
+    \set Score.currentBarNumber = #76
+  
+    \time 4/4
+    \tempo 4 = 132
+  }
 }
 \relative c' {
 
@@ -51,45 +74,4 @@
 
 }
 
-LyricsV = \lyricmode {
-  
-  Vir -- gen ma -- dre, yo pro -- me -- to
-  Re -- zar con ti -- no tus ho -- ras.
-  
-  Yo, tris -- te, yo, tris -- te,_o -- frez -- co tam -- bién,
-  en sa -- lien -- do des -- te la -- go,
-  ir des -- cal -- ço a San -- ti -- a -- go,
-  eu yen -- do_a Je -- ru -- sa -- lén.
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "bass"
-
-  \set Staff.instrumentName = "bass"
-  \set Score.currentBarNumber = #76
-
-  \time 4/4
-  \tempo 4 = 132
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \V
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsV
-    }
-  >>
-  \closing
-}
+\gridTest "basso" #5

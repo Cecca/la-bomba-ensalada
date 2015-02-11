@@ -48,7 +48,7 @@
 
 }
 
-LyricsXII = \lyricmode {
+lyrics = \lyricmode {
   
   Din din di -- ghi di -- ghi din din
   din din din 

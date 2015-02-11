@@ -54,7 +54,7 @@
 
 }
 
-LyricsVII = \lyricmode {
+lyrics = \lyricmode {
   
   ¡Oh gran so -- cor -- ro_y bo -- nan -- ça!
   ¡Na -- ve vie -- ne! ¡Na -- ve vie -- ne! en que_es -- ca -- pe -- mos!

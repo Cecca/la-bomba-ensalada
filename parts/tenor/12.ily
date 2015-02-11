@@ -49,7 +49,7 @@
 
 }
 
-LyricsXII = \lyricmode {
+lyrics = \lyricmode {
   
   ¡Oh,_có -- mo_es - tá des -- tem -- pla -- da!
   
