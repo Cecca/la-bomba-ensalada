@@ -17,8 +17,33 @@
 \include "../../global/global.ily"
 
 % Check the reference pitch
-\gridPutMusic "" #
+\gridPutMusic "soprano" #8
 \with {
+
+  lyrics = \lyricmode {
+    
+    ¡Oh, qué ven -- tu -- ra he te -- ni -- do,
+    pues que pu -- de_en -- trar en él!
+    ¡Oh, qué ven -- tu -- ra he te -- ni -- do,
+    pues que pu -- de_en -- trar en él!
+    pues que pu -- de_en -- trar en él!
+
+  }
+
+  opening = {
+
+    \key bes \major
+
+    \clef "treble"
+
+    \set Staff.instrumentName = "soprano"
+    \set Score.currentBarNumber = #121
+
+    \tempo 4 = 160
+    \time 3/4
+    \partial 4
+
+  }
 
 }
 \relative c' {
@@ -53,44 +78,4 @@
 
 }
 
-lyrics = \lyricmode {
-  
-  ¡Oh, qué ven -- tu -- ra he te -- ni -- do,
-  pues que pu -- de_en -- trar en él!
-  ¡Oh, qué ven -- tu -- ra he te -- ni -- do,
-  pues que pu -- de_en -- trar en él!
-  pues que pu -- de_en -- trar en él!
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble"
-
-  \set Staff.instrumentName = "soprano"
-  \set Score.currentBarNumber = #121
-
-  \tempo 4 = 160
-  \time 3/4
-  \partial 4
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \VIII
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsVIII
-    }
-  >>
-  \closing
-}
+\gridTest "soprano" #8

@@ -17,8 +17,38 @@
 \include "../../global/global.ily"
 
 % Check the reference pitch
-\gridPutMusic "" #
+\gridPutMusic "soprano" #12
 \with {
+
+  lyrics = \lyricmode {
+    
+    Din di -- ghi din
+    din di -- ghi din
+    
+    ¡A -- ca -- ba, mal -- di -- to -- ya!
+    
+    Din di -- ghi din di -- ghi din
+    
+    din din din din din din 
+    din din di -- ghi din 
+    din din din 
+    di -- ghi din
+    
+    ¡Muy bien es -- tá!
+  }
+
+  opening = {
+
+    \key bes \major
+
+    \clef "treble"
+
+    \set Staff.instrumentName = "soprano"
+    \set Score.currentBarNumber = #178
+
+    \time 4/4    
+
+  }
 
 }
 \relative c' {
@@ -49,50 +79,4 @@
 
 }
 
-lyrics = \lyricmode {
-  
-  Din di -- ghi din
-  din di -- ghi din
-  
-  ¡A -- ca -- ba, mal -- di -- to -- ya!
-  
-  Din di -- ghi din di -- ghi din
-  
-  din din din din din din 
-  din din di -- ghi din 
-  din din din 
-  di -- ghi din
-  
-  ¡Muy bien es -- tá!
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble"
-
-  \set Staff.instrumentName = "soprano"
-  \set Score.currentBarNumber = #178
-
-  \time 4/4
-  
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \XII
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsXII
-    }
-  >>
-  \closing
-}
+\gridTest "soprano" #12

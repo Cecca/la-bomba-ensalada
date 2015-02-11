@@ -17,8 +17,34 @@
 \include "../../global/global.ily"
 
 % Check the reference pitch
-\gridPutMusic "" #
+\gridPutMusic "soprano" #07
 \with {
+
+  lyrics = \lyricmode {
+    
+    ¡Oh gran so -- cor -- ro_y bo -- nan -- ça!
+    ¡Na -- ve vie -- ne! ¡Na -- ve vie -- ne! en que_es -- ca -- pe -- mos!
+    ¡A -- lle -- gad, a -- lle -- gad que pe -- re -- çe -- mos!
+    ¡So -- cor -- red, no_a -- ya tar -- dan -- ça So -- cor -- red So -- cor -- red!
+    ¡No se -- a un pun -- to de -- te -- ni -- do,
+    se -- ño -- res, es -- se ba -- tel es -- se ba -- tel es -- se ba -- tel!
+
+  }
+
+  opening = {
+
+    \key bes \major
+
+    \clef "treble"
+
+    \set Staff.instrumentName = "soprano"
+    \set Score.currentBarNumber = #108
+
+    \tempo 4 = 100
+    \time 4/4
+    \partial 4
+
+  }
 
 }
 \relative c' {
@@ -49,45 +75,4 @@
 
 }
 
-lyrics = \lyricmode {
-  
-  ¡Oh gran so -- cor -- ro_y bo -- nan -- ça!
-  ¡Na -- ve vie -- ne! ¡Na -- ve vie -- ne! en que_es -- ca -- pe -- mos!
-  ¡A -- lle -- gad, a -- lle -- gad que pe -- re -- çe -- mos!
-  ¡So -- cor -- red, no_a -- ya tar -- dan -- ça So -- cor -- red So -- cor -- red!
-  ¡No se -- a un pun -- to de -- te -- ni -- do,
-  se -- ño -- res, es -- se ba -- tel es -- se ba -- tel es -- se ba -- tel!
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble"
-
-  \set Staff.instrumentName = "soprano"
-  \set Score.currentBarNumber = #108
-
-  \tempo 4 = 100
-  \time 4/4
-  \partial 4
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \VII
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsVII
-    }
-  >>
-  \closing
-}
+\gridTest "soprano" #7
