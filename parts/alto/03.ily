@@ -11,11 +11,38 @@
    Segment   : III
 %}
 
-% Needs to be in the compile path
-\include "makescore/compile-segment.ily"
+#(ly:set-option 'relative-includes #t)
 
-% Check the reference pitch
-III = \relative c' {
+\include "../../global/global.ily"
+
+\gridPutMusic "alto" #3
+\with {
+  lyrics = \lyricmode {
+    
+    ¿Qué ha -- re -- mos?
+    ¿Qué ha -- re -- mos?
+    
+    ¡Oh, que_es -- tá tan bra -- vo_el mar,
+    que to -- dos pe -- re -- çe -- re -- mos!
+    Pi -- pas y ta -- blas to -- me -- mos.
+  
+  }
+  
+  opening = {
+  
+    \key bes \major
+  
+    \clef "treble"
+  
+    \set Staff.instrumentName = "alto"
+    \set Score.currentBarNumber = #44
+  
+    \time 4/4
+    \partial 4
+  
+  }
+}
+\relative c' {
 
   g'8 g |
 
@@ -46,44 +73,4 @@ III = \relative c' {
 
 }
 
-LyricsIII = \lyricmode {
-  
-  ¿Qué ha -- re -- mos?
-  ¿Qué ha -- re -- mos?
-  
-  ¡Oh, que_es -- tá tan bra -- vo_el mar,
-  que to -- dos pe -- re -- çe -- re -- mos!
-  Pi -- pas y ta -- blas to -- me -- mos.
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble"
-
-  \set Staff.instrumentName = "alto"
-  \set Score.currentBarNumber = #44
-
-  \time 4/4
-  \partial 4
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \III
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsIII
-    }
-  >>
-  \closing
-}
+\gridTest "alto" #3
