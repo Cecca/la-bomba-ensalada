@@ -11,11 +11,42 @@
    Segment   : II
 %}
 
-% Needs to be in the compile path
-\include "makescore/compile-segment.ily"
+#(ly:set-option 'relative-includes #t)
 
-% Check the reference pitch
-II = \relative c' {
+\include "../../global/global.ily"
+
+\gridPutMusic "tenore" #2
+\with {
+  lyrics = \lyricmode {
+    
+    ¡Ha -- zia acá con -- tra -- pe -- sad!
+    ¡Oh, que la na -- ve se_a -- sue -- la!
+    ¡Man -- dad ca -- la -- fe -- te -- ar
+    que qui -- zá da -- rá re -- me -- dio!
+    ¡Ya no_ay tiem -- po ni lu -- gar,
+    que la nao se_a -- bre por me -- dio!
+  
+  }
+  
+  opening = {
+  
+    \key bes \major
+  
+    \clef "treble_8"
+  
+    \set Staff.instrumentName = "tenor"
+    \set Score.currentBarNumber = #32
+  
+    \time 4/4
+    \tempo 4=160
+  
+  }
+  
+  closing = {
+    r4
+  }
+}
+\relative c' {
 
   \barNumberCheck #32
 
@@ -38,46 +69,4 @@ II = \relative c' {
 
 }
 
-LyricsII = \lyricmode {
-  
-  ¡Ha -- zia acá con -- tra -- pe -- sad!
-  ¡Oh, que la na -- ve se_a -- sue -- la!
-  ¡Man -- dad ca -- la -- fe -- te -- ar
-  que qui -- zá da -- rá re -- me -- dio!
-  ¡Ya no_ay tiem -- po ni lu -- gar,
-  que la nao se_a -- bre por me -- dio!
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble_8"
-
-  \set Staff.instrumentName = "tenor"
-  \set Score.currentBarNumber = #32
-
-  \time 4/4
-  \tempo 4=160
-
-}
-
-closing = {
-
-  r4
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \II
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsII
-    }
-  >>
-  \closing
-}
+\gridTest "tenore" #2

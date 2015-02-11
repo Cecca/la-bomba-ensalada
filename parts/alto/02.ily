@@ -11,11 +11,41 @@
    Segment   : II
 %}
 
-% Needs to be in the compile path
-\include "makescore/compile-segment.ily"
+#(ly:set-option 'relative-includes #t)
 
-% Check the reference pitch
-II = \relative c' {
+\include "../../global/global.ily"
+
+\gridPutMusic "alto" #2
+\with {
+  lyrics = \lyricmode {
+    
+    Es -- sas gú -- me -- nas cor -- tad
+    por -- que se_a -- mai -- ne la ve -- la.
+    
+    ¡Man -- dad ca -- la -- fa -- te -- ar
+    man -- dad ca -- la -- fa -- te -- ar
+    que qui -- zá da -- rá re -- me -- dio!
+  
+  }
+  
+  opening = {
+  
+    \key bes \major
+  
+    \clef "treble"
+  
+    \set Staff.instrumentName = "alto"
+    \set Score.currentBarNumber = #32
+  
+    \time 4/4
+    \tempo 4=160
+  }
+  
+  closing = {
+    r4
+  }
+}
+\relative c' {
 
   \barNumberCheck #32
 
@@ -34,43 +64,4 @@ II = \relative c' {
 
 }
 
-LyricsII = \lyricmode {
-  
-  Es -- sas gú -- me -- nas cor -- tad
-  por -- que se_a -- mai -- ne la ve -- la.
-  
-  ¡Man -- dad ca -- la -- fa -- te -- ar
-  man -- dad ca -- la -- fa -- te -- ar
-  que qui -- zá da -- rá re -- me -- dio!
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble"
-
-  \set Staff.instrumentName = "alto"
-  \set Score.currentBarNumber = #32
-
-  \time 4/4
-  \tempo 4=160
-}
-
-closing = {
-  r4
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \II
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsII
-    }
-  >>
-  \closing
-}
+\gridTest "alto" #2
