@@ -11,64 +11,33 @@
   }
 }
 
-
+% Needed till the transition is complete to prevent 
+% partial compilation of segments still to transfer
 \include "makescore/init-score.ily"
 
-\include "global/marks.ily"
-\include "parts/soprano.ily"
-\include "parts/alto.ily"
-\include "parts/tenor.ily"
-\include "parts/bass.ily"
+% Initialize the structure
+\include "global/global.ily"
+
+% Templates, for \SATBChoir
+\loadModule "gridly/grid-templates.ily"
+
+% Add \includePattern to the commands
+\include "general-tools/includeHelper/definitions.ily"
+
+\includePattern "parts/soprano" ".*\\.ily"
+\includePattern "parts/alto" ".*\\.ily"
+\includePattern "parts/tenor" ".*\\.ily"
+\includePattern "parts/bass" ".*\\.ily"
+
+\gridDisplay
+
+segments = #'all
 
 \score {
   
-  \new ChoirStaff <<
-    \new Staff \with {
-      midiInstrument = "acoustic grand"
-      instrumentName = "Soprano"
-    } {
-      <<
-      \new Voice = "soprano" \soprano
-      \new Voice = "marks" \marks
-      >>
-    }
-    \new Lyrics \lyricsto "soprano" {
-      \lyricsSoprano
-    }
-    
-    \new Staff \with {
-      midiInstrument = "acoustic grand"
-      instrumentName = "Contralto"
-    } {
-      \new Voice = "alto" \alto
-    }
-    \new Lyrics \lyricsto "alto" {
-      \lyricsAlto
-    }
-    
-    \new Staff \with {
-      midiInstrument = "acoustic grand"
-      instrumentName = "Tenore"
-    } {
-      \new Voice = "tenor" \tenor
-    }
-    \new Lyrics \lyricsto "tenor" {
-      \lyricsTenor
-    }
-    
-    \new Staff \with {
-      midiInstrument = "acoustic grand"
-      instrumentName = "Basso"
-    } {
-      \new Voice = "bass" \bass
-    }
-    \new Lyrics \lyricsto "bass" {
-      \lyricsBass
-    }
-  >>
+  \SATBChoir \segments
   
   \layout {}
-  \midi {
-    \tempo 4=170
-  }
+  \midi {}
 }
+

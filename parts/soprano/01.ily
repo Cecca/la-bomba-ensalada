@@ -11,12 +11,43 @@
    Segment   : I
 %}
 
-% Needs to be in the compile path
-\include "makescore/compile-segment.ily"
+#(ly:set-option 'relative-includes #t)
 
-% Check the reference pitch
-I = \relative c' {
+\include "../../global/global.ily"
 
+
+\gridPutMusic "soprano"  #1
+\with {
+  opening = {
+    \key bes \major
+  
+    \clef "treble"
+  
+    \set Staff.instrumentName = "soprano"
+    \set Score.currentBarNumber = #0
+  
+    \tempo 4=160  
+  }
+  
+  lyrics = \lyricmode {
+    ¡Va -- yan los car -- gos al mar
+    que nos y -- mos a -- ne -- gar!
+    ¡Va -- yan va -- yan los car -- gos al mar
+    que nos y -- mos a -- ne -- gar!
+    ¡Do re -- me -- dio no se_es -- pe -- ra!
+    ¡Do re -- me -- dio no se_es -- pe -- ra!
+    
+    ¡A l'es -- co -- ta so -- co -- rred!
+    ¡A l'es -- co -- ta so -- co -- rred!
+    ¡so -- co -- rred!
+  
+    ¡Vo -- so -- tros id al ti -- món!
+    ¡Qué_es -- pa -- cio! ¡Co -- rred, co -- rred!
+    ¿No veis nues -- tra per -- di -- ción?
+  }
+}
+\relative c' {
+  \key bes \major
   \time 4/4
 
   r1 |
@@ -52,55 +83,6 @@ I = \relative c' {
   aes2 aes4 aes |
   aes aes bes2 |
 
-  %\barNumberCheck #31
-
 }
 
-LyricsI = \lyricmode {
-  
-  ¡Va -- yan los car -- gos al mar
-  que nos y -- mos a -- ne -- gar!
-  ¡Va -- yan va -- yan los car -- gos al mar
-  que nos y -- mos a -- ne -- gar!
-  ¡Do re -- me -- dio no se_es -- pe -- ra!
-  ¡Do re -- me -- dio no se_es -- pe -- ra!
-  
-  ¡A l'es -- co -- ta so -- co -- rred!
-  ¡A l'es -- co -- ta so -- co -- rred!
-  ¡so -- co -- rred!
-
-  ¡Vo -- so -- tros id al ti -- món!
-  ¡Qué_es -- pa -- cio! ¡Co -- rred, co -- rred!
-  ¿No veis nues -- tra per -- di -- ción?
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble"
-
-  \set Staff.instrumentName = "soprano"
-  \set Score.currentBarNumber = #0
-
-  \tempo 4=160
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \I
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsI
-    }
-  >>
-  \closing
-}
+\gridTest "soprano" #1

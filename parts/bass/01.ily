@@ -11,12 +11,46 @@
    Segment   : I
 %}
 
-% Needs to be in the compile path
-\include "makescore/compile-segment.ily"
+#(ly:set-option 'relative-includes #t)
 
-% Check the reference pitch
-I = \relative c' {
+\include "../../global/global.ily"
 
+\gridPutMusic "basso" #1
+\with {
+  lyrics = \lyricmode {
+    
+    ¡Va -- yan los car -- gos al mar
+    que nos y -- mos a -- ne -- gar!
+    ¡Va -- yan los car -- gos al mar
+    que nos y -- mos a -- ne -- gar!
+    ¡Do re -- me -- dio no se_es -- pe -- ra!
+    ¡Do re -- me -- dio no se_es -- pe -- ra!
+    
+    ¡A l'es -- co -- ta so -- co -- rred!
+    ¡A l'es -- co -- ta so -- co -- rred!
+    ¡so -- co -- rred!
+  
+    ¡Vo -- so -- tros id al ti -- món!
+    ¡Qué_es -- pa -- cio! ¡Co -- rred, co -- rred!
+    ¿No veis nues -- tra per -- di -- ción?
+  
+  }
+  
+  opening = {
+    \key bes \major
+  
+    \clef "bass"
+  
+    \set Staff.instrumentName = "bass"
+    \set Score.currentBarNumber = #0
+  
+    \tempo 4 = 170  
+  }
+}
+\relative c' {
+  \clef "bass"
+  \key bes \major
+  
   \time 4/4
   
   r1 |
@@ -56,51 +90,4 @@ I = \relative c' {
 
 }
 
-LyricsI = \lyricmode {
-  
-  ¡Va -- yan los car -- gos al mar
-  que nos y -- mos a -- ne -- gar!
-  ¡Va -- yan los car -- gos al mar
-  que nos y -- mos a -- ne -- gar!
-  ¡Do re -- me -- dio no se_es -- pe -- ra!
-  ¡Do re -- me -- dio no se_es -- pe -- ra!
-  
-  ¡A l'es -- co -- ta so -- co -- rred!
-  ¡A l'es -- co -- ta so -- co -- rred!
-  ¡so -- co -- rred!
-
-  ¡Vo -- so -- tros id al ti -- món!
-  ¡Qué_es -- pa -- cio! ¡Co -- rred, co -- rred!
-  ¿No veis nues -- tra per -- di -- ción?
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "bass"
-
-  \set Staff.instrumentName = "bass"
-  \set Score.currentBarNumber = #0
-
-  \tempo 4 = 170
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \I
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsI
-    }
-  >>
-  \closing
-}
+\gridTest "basso" #1
