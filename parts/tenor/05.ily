@@ -11,8 +11,10 @@
    Segment   : V
 %}
 
-% Needs to be in the compile path
-\include "makescore/compile-segment.ily"
+
+\#(ly:set-option 'relative-includes #t)
+
+\include "../../global/global.ily"
 \include "makescore/colorize.ily"
 
 % Check the reference pitch
