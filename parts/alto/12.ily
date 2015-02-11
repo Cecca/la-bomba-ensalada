@@ -17,9 +17,37 @@
 \include "../../global/global.ily"
 
 % Check the reference pitch
-\gridPutMusic "" #
+\gridPutMusic "alto" #12
 \with {
+  lyrics = \lyricmode {
+    
+    Din din di -- ghi di -- ghi din din
+    din din din 
+    
+    ¡A -- ca -- ba, mal -- di -- to -- ya!
+    
+    Su -- be, su -- be_un po -- co mas.
+    
+    din din din din din din 
+    din din di -- ghi di -- ghi din 
+    din din din 
+    din
+    
+    ¡Muy bien es -- tá!
 
+  }
+
+  opening = {
+
+    \key bes \major
+
+    \clef "treble"
+
+    \set Staff.instrumentName = "alto"
+    \set Score.currentBarNumber = #178
+
+    \time 4/4
+  }
 }
 \relative c' {
 
@@ -48,51 +76,4 @@
 
 }
 
-lyrics = \lyricmode {
-  
-  Din din di -- ghi di -- ghi din din
-  din din din 
-  
-  ¡A -- ca -- ba, mal -- di -- to -- ya!
-  
-  Su -- be, su -- be_un po -- co mas.
-  
-  din din din din din din 
-  din din di -- ghi di -- ghi din 
-  din din din 
-  din
-  
-  ¡Muy bien es -- tá!
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble"
-
-  \set Staff.instrumentName = "alto"
-  \set Score.currentBarNumber = #178
-
-  \time 4/4
-  
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \XII
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsXII
-    }
-  >>
-  \closing
-}
+\gridTest "alto" #12

@@ -17,8 +17,23 @@
 \include "../../global/global.ily"
 
 % Check the reference pitch
-\gridPutMusic "" #
+\gridPutMusic "alto" #9
 \with {
+  lyrics = \lyricmode {
+    
+    Dig -- num et jus -- tum est
+
+  }
+
+  opening = {
+
+    \key bes \major
+
+    \clef "treble"
+
+    \set Staff.instrumentName = "alto"
+    \set Score.currentBarNumber = #141
+  }
 
 }
 \relative c' {
@@ -40,38 +55,4 @@
 
 }
 
-lyrics = \lyricmode {
-  
-  Dig -- num et jus -- tum est
-
-}
-
-opening = {
-
-  \key bes \major
-
-  \clef "treble"
-
-  \set Staff.instrumentName = "alto"
-  \set Score.currentBarNumber = #141
-
-  
-
-}
-
-closing = {
-
-}
-
-\compileSegment {
-  \opening
-  <<
-    \new Voice = "mus12345" {
-      \IX
-    }
-    \new Lyrics \lyricsto "mus12345" {
-      \LyricsIX
-    }
-  >>
-  \closing
-}
+\gridTest "alto" #9
