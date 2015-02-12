@@ -24,9 +24,8 @@
     \clef "treble"
   
     \set Staff.instrumentName = "soprano"
-    \set Score.currentBarNumber = #0
   
-    \tempo 4=160  
+    \tempo 4=170  
   }
   
   lyrics = \lyricmode {

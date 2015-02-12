@@ -42,9 +42,8 @@
     \clef "bass"
   
     \set Staff.instrumentName = "bass"
-    \set Score.currentBarNumber = #0
   
-    \tempo 4 = 170  
+    \tempo 4 = 170
   }
 }
 \relative c' {

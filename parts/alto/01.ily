@@ -24,7 +24,6 @@
     \clef "treble"
   
     \set Staff.instrumentName = "alto"
-    \set Score.currentBarNumber = #0
   
     \tempo 4 = 170
   }
