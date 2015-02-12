@@ -45,6 +45,8 @@
     \time 4/4
     \partial 2.
   }
+
+  closing = { r4 r4 \bar "|." }
 }
 \relative c' {
 

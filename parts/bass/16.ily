@@ -48,6 +48,7 @@
 
   }
 
+  closing = { r4 r4 \bar "|." }
 }
 \relative c' {
 
