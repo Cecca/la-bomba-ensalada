@@ -1,9 +1,14 @@
+\version "2.18.2"
+
+#(ly:set-option 'relative-includes #t)
+
+\include "../makescore/colorize.ily"
+
 \include "openlilylib"
 
 \loadModule "gridly"
 
 \gridInit #22 #'("soprano" "alto" "tenore" "basso")
-
   
 \gridSetStructure #1 {
   % I -----------------------

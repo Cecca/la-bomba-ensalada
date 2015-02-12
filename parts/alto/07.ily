@@ -15,7 +15,6 @@
 #(ly:set-option 'relative-includes #t)
 
 \include "../../global/global.ily"
-\include "makescore/colorize.ily"
 
 % Check the reference pitch
 \gridPutMusic "alto" #7

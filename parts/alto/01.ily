@@ -15,7 +15,6 @@
 
 \include "../../global/global.ily"
 
-\include "makescore/colorize.ily"
 
 \gridPutMusic "alto" #1
 \with {

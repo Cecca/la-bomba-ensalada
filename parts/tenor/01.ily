@@ -15,7 +15,6 @@
 
 \include "../../global/global.ily"
 
-\include "makescore/colorize.ily"
 
 \gridPutMusic "tenore" #1
 \with {
