@@ -42,3 +42,8 @@ segments = #'(11 . 16)
   \layout {}
   \midi {}
 }
+
+\rehearsalMidi { \SATBChoir \segments } "soprano"
+\rehearsalMidi { \SATBChoir \segments } "alto"
+\rehearsalMidi { \SATBChoir \segments } "tenore"
+\rehearsalMidi { \SATBChoir \segments } "basso"
