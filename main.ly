@@ -29,6 +29,7 @@
 \includePattern "parts/bass" ".*\\.ily"
 
 \gridDisplay
+\gridCheck
 
 segments = #'all
 
