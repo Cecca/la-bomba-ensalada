@@ -23,18 +23,18 @@
 \include "general-tools/includeHelper/definitions.ily"
 
 % Include all the single parts
+\include "global/marks.ily"
 \includePattern "parts/soprano" ".*\\.ily"
 \includePattern "parts/alto" ".*\\.ily"
 \includePattern "parts/tenor" ".*\\.ily"
 \includePattern "parts/bass" ".*\\.ily"
 
 \gridDisplay
-
-segments = #'all
+\gridCheck
 
 \score {
   
-  \SATBChoir \segments
+  \SATBChoir
   
   \layout {}
   \midi {}
