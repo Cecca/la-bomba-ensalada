@@ -1,6 +1,6 @@
 \version "2.18.2"
 
-\include "global.ily"
+\include "../global/global.ily"
   
 
 \gridPutMusic "marks" #1 {
