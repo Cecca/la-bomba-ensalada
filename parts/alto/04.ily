@@ -66,4 +66,4 @@
 
 }
 
-\gridTest "alto" #4
+\gridCompileCell "alto" #4

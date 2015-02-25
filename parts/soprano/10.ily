@@ -66,4 +66,4 @@
 
 }
 
-\gridTest "soprano" #10
+\gridCompileCell "soprano" #10

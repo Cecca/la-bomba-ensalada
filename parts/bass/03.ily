@@ -75,4 +75,4 @@
 
 }
 
-\gridTest "basso" #3
+\gridCompileCell "basso" #3

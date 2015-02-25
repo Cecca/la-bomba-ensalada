@@ -10,19 +10,19 @@
 
 \gridInit #22 #'("marks" "soprano" "alto" "tenore" "basso")
   
-\gridSetStructure #1 {
+\gridSetSegmentTemplate #1 {
   % I -----------------------
   s1*29
   s1*2
 }
 
-\gridSetStructure #2 {
+\gridSetSegmentTemplate #2 {
   % II ----------------------
   s1*11
   s4*3
 }
 
-\gridSetStructure #3 {
+\gridSetSegmentTemplate #3 {
   % III ---------------------
   s4 |
   s1 |
@@ -35,7 +35,7 @@
   s2*1
 }
 
-\gridSetStructure #4 {
+\gridSetSegmentTemplate #4 {
   % IV -----------------------  
   \time 3/4
   s2.*15
@@ -43,7 +43,7 @@
   s1*2
 }
 
-\gridSetStructure #5 {
+\gridSetSegmentTemplate #5 {
   % V ------------------------  
   s1*12
   \time 3/4
@@ -52,14 +52,14 @@
   s4
 }
 
-\gridSetStructure #6 {
+\gridSetSegmentTemplate #6 {
   % VI ------------------------
   s4 s4 s4 |
   s1*12
   s4 s4 s4
 }
 
-\gridSetStructure #7 {
+\gridSetSegmentTemplate #7 {
   % VII ------------------------
   s4 |
   s1*10
@@ -70,7 +70,7 @@
   s4 s4
 }
 
-\gridSetStructure #8 {  
+\gridSetSegmentTemplate #8 {  
   % VIII ---------------------------
   s4 |
   s2.*16
@@ -79,25 +79,25 @@
   }
 }
 
-\gridSetStructure #9 {  
+\gridSetSegmentTemplate #9 {  
   % IX ------------------------ 
   \time 4/4
   s1*10
 }
 
-\gridSetStructure #10 {  
+\gridSetSegmentTemplate #10 {  
   % X --------------------------
   s1*16
   s4 s4
 }
 
-\gridSetStructure #11 {  
+\gridSetSegmentTemplate #11 {  
   % XI -------------------------
   s4 s4 |
   s1*10
 }
 
-\gridSetStructure #12 {  
+\gridSetSegmentTemplate #12 {  
   % XII --------------------------
   s1*11
   \time 2/4
@@ -106,52 +106,52 @@
   s2.*3
 }
 
-\gridSetStructure #13 {  
+\gridSetSegmentTemplate #13 {  
   % XIII -------------------------
   s2.*24
   \time 4/4
   s1*1
 }
 
-\gridSetStructure #14 {  
+\gridSetSegmentTemplate #14 {  
   % XIV ---------------------------  
   s1*14 
   s4
 }
 
-\gridSetStructure #15 {  
+\gridSetSegmentTemplate #15 {  
   % XV ----------------------------
   s4 s4 s4 |
   s1*8 
   s4
 }
 
-\gridSetStructure #16 {  
+\gridSetSegmentTemplate #16 {  
   % XVI ----------------------------
   s4 s4 s4 | 
   s1*8 
   s4 s4
 }
 
-\gridSetStructure #17 {  
+\gridSetSegmentTemplate #17 {  
   % XVII ---------------------------
   s4 s4 | 
   s1*4
 }
 
-\gridSetStructure #18 {  
+\gridSetSegmentTemplate #18 {  
   % XVIII --------------------------- 
   \time 3/4 
   s2.*33
 }
 
-\gridSetStructure #19 {  
+\gridSetSegmentTemplate #19 {  
   % XIX ----------------------------- 
   \time 4/4 
   s1*19
 }
 
-\gridSetStructure #20 {  
+\gridSetSegmentTemplate #20 {  
   % XX ------------------------------- 
   \time 6/8 
   \repeat volta 2 {
@@ -159,13 +159,13 @@
   }
 }
 
-\gridSetStructure #21 {  
+\gridSetSegmentTemplate #21 {  
   % XXI -------------------------------
   \time 4/4 
   s1*11
 }
 
-\gridSetStructure #22 {  
+\gridSetSegmentTemplate #22 {  
   % XXII ------------------------------- 
   \time 4/4 
   s1*14 

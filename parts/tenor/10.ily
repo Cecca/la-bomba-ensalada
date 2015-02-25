@@ -66,4 +66,4 @@
 
 }
 
-\gridTest "tenore" #10
+\gridCompileCell "tenore" #10
