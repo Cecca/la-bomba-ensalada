@@ -26,6 +26,7 @@
 \include "general-tools/includeHelper/definitions.ily"
 
 % Include all the single parts
+\include "parts/marks.ily"
 \includePattern "parts/soprano" ".*\\.ily"
 \includePattern "parts/alto" ".*\\.ily"
 \includePattern "parts/tenor" ".*\\.ily"
@@ -33,17 +34,17 @@
 
 \gridDisplay
 
-segments = #'(11 . 16)
+\gridSetRange #'(11 . 16)
 
 \score {
   
-  \SATBChoir \segments
+  \SATBChoir
   
   \layout {}
   \midi {}
 }
 
-\rehearsalMidi { \SATBChoir \segments } "soprano"
-\rehearsalMidi { \SATBChoir \segments } "alto"
-\rehearsalMidi { \SATBChoir \segments } "tenore"
-\rehearsalMidi { \SATBChoir \segments } "basso"
+\rehearsalMidi \SATBChoir "soprano"
+\rehearsalMidi \SATBChoir "alto"
+\rehearsalMidi \SATBChoir "tenore"
+\rehearsalMidi \SATBChoir "basso"
