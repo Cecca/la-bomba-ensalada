@@ -64,11 +64,11 @@
   r1 |
   r1 |
   r4 f g a |
+  \break
   bes c f, r8 f |
   
-  \break
   \newSpacingSection
-  \set Score.proportionalNotationDuration = #(ly:make-moment 1/20)
+  \set Score.proportionalNotationDuration = #(ly:make-moment 1/16)
   
   bes4 f bes ees,8 bes' ~ |
   \time 2/4
