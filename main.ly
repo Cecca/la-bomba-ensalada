@@ -20,14 +20,14 @@
 \loadModule "gridly/grid-templates.ily"
 
 % Add \includePattern to the commands
-\include "general-tools/includeHelper/definitions.ily"
+\include "_internal/utilities/include-pattern.ily"
 
 % Include all the single parts
 \include "parts/marks.ily"
-\includePattern "parts/soprano" ".*\\.ily"
-\includePattern "parts/alto" ".*\\.ily"
-\includePattern "parts/tenor" ".*\\.ily"
-\includePattern "parts/bass" ".*\\.ily"
+\includePattern "/parts/soprano/" ".*\\.ily"
+\includePattern "/parts/alto/" ".*\\.ily"
+\includePattern "/parts/tenor/" ".*\\.ily"
+\includePattern "/parts/bass/" ".*\\.ily"
 
 \gridDisplay
 \gridCheck
