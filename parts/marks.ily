@@ -177,7 +177,8 @@
 }
 
 \gridPutMusic "marks" #18 {  
-  % XVIII --------------------------- 
+  % XVIII ---------------------------
+  \tempo 4=144
   \time 3/4 
   \barNumberCheck #255 
   \mark 17
@@ -185,7 +186,8 @@
 }
 
 \gridPutMusic "marks" #19 {  
-  % XIX ----------------------------- 
+  % XIX -----------------------------
+  \tempo 4=152
   \time 4/4 
   \barNumberCheck #288 
   \mark 18
@@ -194,6 +196,7 @@
 
 \gridPutMusic "marks" #20 {  
   % XX ------------------------------- 
+  \tempo 4.=98
   \time 6/8 
   \barNumberCheck #307 
   \mark 19
@@ -204,6 +207,7 @@
 
 \gridPutMusic "marks" #21 {  
   % XXI -------------------------------
+  \tempo 4=144
   \time 4/4 
   \barNumberCheck #311 
   \mark 20
@@ -213,6 +217,7 @@
 \gridPutMusic "marks" #22 {  
   % XXII ------------------------------- 
   \barNumberCheck #322 
+  \tempo 4=108
   \mark 21
   s1*15
   \bar "|."

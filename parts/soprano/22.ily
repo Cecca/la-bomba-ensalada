@@ -17,7 +17,7 @@
 
 \gridPutMusic "soprano" 22
 \with {
-  opening = { \clef "violin" }
+  opening = { \clef "violin" \tempo 4=108 }
   lyrics = \lyricmode {
     Nam si pe -- ri -- cu -- la sunt in ma -- ri,
     pe -- ri -- cu -- la sunt in ter -- ra
