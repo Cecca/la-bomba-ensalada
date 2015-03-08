@@ -37,7 +37,7 @@
   f8 g f ees d4 d4 |
   bes8 bes bes bes bes4. bes8 |
   ees8 ees ees ees d2 |
-  g2 r2 |
+  g1 |
   R1*2 |
   
 }
