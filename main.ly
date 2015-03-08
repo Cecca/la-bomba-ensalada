@@ -13,6 +13,9 @@
   }
 }
 
+% Sent font dimension
+#(set-global-staff-size 18)
+
 % Initialize the structure
 \include "global/global.ily"
 
