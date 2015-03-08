@@ -168,6 +168,5 @@
 \gridSetSegmentTemplate #22 {  
   % XXII ------------------------------- 
   \time 4/4 
-  s1*14 
-  \barNumberCheck #336
+  s1*15
 }
