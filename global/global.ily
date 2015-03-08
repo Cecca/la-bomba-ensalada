@@ -167,6 +167,5 @@
 
 \gridSetSegmentTemplate #22 {  
   % XXII ------------------------------- 
-  \time 4/4 
   s1*15
 }
