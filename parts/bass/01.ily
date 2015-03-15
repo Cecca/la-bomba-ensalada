@@ -85,7 +85,6 @@
   f2 f4 f |
   f f ees2 |
 
-  %\barNumberCheck #31
 
 }
 

@@ -41,7 +41,6 @@
     \clef "bass"
 
     \set Staff.instrumentName = "bass"
-    \set Score.currentBarNumber = #233
 
     \time 4/4
     \partial 2.
@@ -53,7 +52,6 @@
 
   r8 bes bes bes16 bes f8 f |
 
-  \barNumberCheck #233
 
   bes4 bes8 bes4 bes8 ees,8 ees |
   bes'4 bes8 bes4 bes8 ees, ees |

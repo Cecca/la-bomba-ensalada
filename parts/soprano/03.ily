@@ -35,7 +35,6 @@
     \clef "treble"
   
     \set Staff.instrumentName = "soprano"
-    \set Score.currentBarNumber = #44
   
     \time 4/4
     
@@ -47,7 +46,6 @@
 
   bes'8 bes 
 
-  \barNumberCheck #44
 
   bes4 bes r bes8 bes |
   \time 3/4

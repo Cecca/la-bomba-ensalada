@@ -34,7 +34,6 @@
     \clef "treble"
 
     \set Staff.instrumentName = "alto"
-    \set Score.currentBarNumber = #121
 
     \time 3/4
     \partial 4
@@ -46,7 +45,6 @@
 
   r4 
 
-  \barNumberCheck #121
 
   r2. r2. r2. r2. r2. r2. r2. r2. r2. r2. r2. 
 

@@ -44,7 +44,6 @@
     \clef "treble_8"
 
     \set Staff.instrumentName = "tenor"
-    \set Score.currentBarNumber = #178
 
     \time 4/4
     
@@ -53,7 +52,6 @@
 }
 \relative c' {
 
-  \barNumberCheck #178
 
   r1 |
   r1 |

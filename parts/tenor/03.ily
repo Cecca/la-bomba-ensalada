@@ -35,7 +35,6 @@
     \clef "treble_8"
   
     \set Staff.instrumentName = "tenor"
-    \set Score.currentBarNumber = #44
   
     \time 4/4
     \partial 4
@@ -47,7 +46,6 @@
 
   d8 d8 | 
 
-  \barNumberCheck #44
 
   d4 d r ees8 ees 
   \time 3/4

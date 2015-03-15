@@ -42,7 +42,6 @@
     \clef "treble_8"
 
     \set Staff.instrumentName = "tenor"
-    \set Score.currentBarNumber = #94
 
     \tempo 4 = 100
     \time 4/4
@@ -55,7 +54,6 @@
 
   f16 f f f f f f8 f4 |
 
-  \barNumberCheck #95
 
   d8 ees f4 r2 |
   r4 bes,8 c d d ees c |

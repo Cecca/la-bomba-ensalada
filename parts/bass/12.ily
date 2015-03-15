@@ -43,7 +43,6 @@
     \clef "bass"
 
     \set Staff.instrumentName = "bass"
-    \set Score.currentBarNumber = #178
 
     \time 4/4
     
@@ -52,7 +51,6 @@
 }
 \relative c' {
 
-  \barNumberCheck #178
 
   bes4 bes bes2 |
   bes4 bes aes2 |

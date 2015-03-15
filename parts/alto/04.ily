@@ -33,7 +33,6 @@
     \clef "treble"
   
     \set Staff.instrumentName = "alto"
-    \set Score.currentBarNumber = #59
   
   }
 }
@@ -41,7 +40,6 @@
 
   \time 3/4
 
-  \barNumberCheck #59
 
   f4 g ees |
   d2 r4 |

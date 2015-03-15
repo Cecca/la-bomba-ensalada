@@ -32,7 +32,6 @@
     \clef "treble_8"
   
     \set Staff.instrumentName = "tenor"
-    \set Score.currentBarNumber = #59
    
   }
 }
@@ -40,7 +39,6 @@
 
   \time 3/4
 
-  \barNumberCheck #59
   
   r2. |
   r2. |

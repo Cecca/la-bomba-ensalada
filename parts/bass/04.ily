@@ -31,7 +31,6 @@
     \clef "bass"
   
     \set Staff.instrumentName = "bass"
-    \set Score.currentBarNumber = #59
   
   }
 }
@@ -39,7 +38,6 @@
 
   \time 3/4
 
-  \barNumberCheck #59
 
   r2. |
   r2. |
