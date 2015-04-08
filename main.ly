@@ -25,12 +25,14 @@
 % Add \includePattern to the commands
 \include "_internal/utilities/include-pattern.ily"
 
+\setOption internal.include-pattern.display-includes ##f
+
 % Include all the single parts
 \include "parts/marks.ily"
-\includePattern "/parts/soprano/" ".*\\.ily"
-\includePattern "/parts/alto/" ".*\\.ily"
-\includePattern "/parts/tenor/" ".*\\.ily"
-\includePattern "/parts/bass/" ".*\\.ily"
+\includePattern "parts/soprano/" ".*\\.ily"
+\includePattern "parts/alto/" ".*\\.ily"
+\includePattern "parts/tenor/" ".*\\.ily"
+\includePattern "parts/bass/" ".*\\.ily"
 
 \gridDisplay
 \gridCheck
