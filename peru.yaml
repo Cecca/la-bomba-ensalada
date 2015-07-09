@@ -3,3 +3,4 @@ imports:
 
 git module openlilylib:
     url: git://github.com/openlilylib/openlilylib.git
+    rev: 75adb418d9a68ff973feb05c13a5a6b80ef7e30e
