@@ -1,0 +1,5 @@
+imports:
+    openlilylib: openlilylib/  
+
+git module openlilylib:
+    url: git://github.com/openlilylib/openlilylib.git
